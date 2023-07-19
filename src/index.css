@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+
+    /* Global */
+    --navbar-hovered-color: #FF014F;
+    
+    --font-roboto: 'Roboto', sans-serif;
+
+    /* Dark mode */
+    --dark-navbar-primary-color: #ccd6f6;
+
+
+    --dark-main-background-color: #0A192F;
+    --dark-main-background-color-lighter: #173c73;
+    
+    
+    --dark-home-h2-color: #ddeaff;
+    --dark-home-h1-color: #ddeaff;
+    --dark-home-h3-color: #ccd6f6;
+    --dark-home-p-color: #ccd6f6;
+
+
+    --dark-resume-h1-color: #ddeaff;
+    --dark-resume-selection-button-border-color: #ff6c6c;
+    --dark-resume-selection-button-color: #ffffff;
+
+    --dark-resume-button-border-color: #5c82ff;
+    --dark-resume-button-text-color: #ffffff;
+    --dark-resume-selected-button-text-color: #ffffff;
+
+    --dark-resume-name-color: #ffffff;
+    --dark-resume-date-color: #ccd6f6;
+    --dark-resume-website-color: #64FFDA;
+    --dark-resume-description-color: #e8f1ff;
+
+    /* Light mode */
+    --light-navbar-primary-color: #212121;
+    --light-main-background-color:rgb(222, 222, 222);
+    --light-main-background-color-lighter: #051a3a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    width: 100%;
+    min-height: 100vh;
+    transition: background-color 0.2s ease;
+}
+
+.section-page {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.app-dark-mode {
+    background-color: var(--dark-main-background-color);
+}
+
+.styled-button {
+    padding: 10px;
+    border: solid 2px var(--navbar-hovered-color);
+    border-radius: 5px;
+    color: var(--navbar-hovered-color);
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+.styled-button:hover {
+    background-color: var(--navbar-hovered-color);
+    color: var(--dark-navbar-primary-color);
+}

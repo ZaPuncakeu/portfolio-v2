@@ -1,0 +1,151 @@
+#resume {
+    width: 100%;
+    height: 100vh;
+
+    &>h1 {
+        font-family: var(--font-roboto);
+        font-size: clamp(2rem, 5vw, 5rem);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .selection {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+
+        button {
+            height: 50px;
+            width: 200px;
+            font-size: 1rem;
+            font-size: clamp(0.8rem, 1.2vw, 1rem);
+            border-radius: 5px;
+            background: transparent;
+            cursor: pointer;
+        }
+    }
+    
+    #content-container {
+        width: 100%;
+        display: flex;
+        gap: 25px;
+    }
+
+    .exp-name 
+    {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        gap: 15px;
+
+        flex-grow: 0;
+        flex-shrink: 0;
+        button {
+            width: 100%;
+            padding: 15px 0;
+            font-size: clamp(0.8rem, 1.2vw, 1rem);
+            border-radius: 5px;
+            background: transparent;
+            outline: none;
+            font-family: var(--font-roboto);
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+    }
+
+    .experience {
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        #resume-name {
+            font-family: var(--font-roboto);
+        }
+        
+        #resume-date {
+            font-family: var(--font-roboto);
+            font-size: clamp(0.8rem, 1.2vw, 1rem);
+        }
+
+        #resume-website {
+            text-decoration: none;
+            font-family: var(--font-roboto);
+            font-weight: 500;
+            font-size: clamp(0.8rem, 1.2vw, 1rem);
+        }
+
+        #resume-description {
+            font-family: var(--font-roboto);
+            font-size: clamp(1.2rem, 1.2vw, 1.8rem);
+            box-sizing: border-box;
+        }
+
+        #resume-bullets {
+            font-family: var(--font-roboto);
+            font-size: clamp(1.2rem, 1.2vw, 1.8rem);
+            padding-left: 20px;
+
+            li {
+                margin: 0 0 23px 0;
+            }
+        }
+    }
+}
+
+
+
+.app-dark-mode {
+    #resume {
+        &>h1 {
+            color: var(--dark-resume-h1-color);
+        }
+        
+        .selection {
+    
+            button {
+                border: solid var(--dark-resume-selection-button-border-color) 2px;
+                color: var(--dark-resume-selection-button-border-color);
+            }
+
+            .selected {
+                /*background-color: var(--dark-resume-selection-button-border-color);*/
+                color: var(--dark-resume-button-text-color);
+            }
+        }
+
+        .exp-name 
+        {
+            button {
+                border: solid var(--dark-resume-button-border-color) 2px;
+                color: var(--dark-resume-button-text-color);
+            }
+
+            .selected {
+                background-color: var(--dark-resume-button-border-color);
+                color: var(--dark-resume-selected-button-text-color);
+            }
+        }
+        .experience {
+            border-left: solid white 2px;
+            #resume-name {
+                color: var(--dark-resume-name-color);
+                text-transform: uppercase;
+            }
+
+            #resume-date {
+                color: var(--dark-resume-date-color);
+            }
+
+            #resume-website {
+                color: var(--dark-resume-website-color);
+            }
+
+            #resume-description {
+                color: var(--dark-resume-description-color);
+            }
+
+            #resume-bullets {
+                color: var(--dark-resume-description-color);
+            }
+        }
+    }
+}

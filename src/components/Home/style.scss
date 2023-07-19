@@ -1,0 +1,74 @@
+#home {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 55px;
+    div:last-child {
+        img {
+            object-fit: cover;
+        }
+    }
+
+    .wave {
+        animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+        animation-duration: 2.5s;        /* Change to speed up or slow down */
+        animation-iteration-count: infinite;  /* Never stop waving :) */
+        transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+        display: inline-block;
+    }
+    
+    @keyframes wave-animation {
+        0% { transform: rotate( 0.0deg) }
+        10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+        20% { transform: rotate(-8.0deg) }
+        30% { transform: rotate(14.0deg) }
+        40% { transform: rotate(-4.0deg) }
+        50% { transform: rotate(10.0deg) }
+        60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+        100% { transform: rotate( 0.0deg) }
+    }
+
+    h2 {
+        font-family: var(--font-roboto);
+        font-size: clamp(1.5rem, 3vw, 5rem);
+    }
+
+    h1 {
+        font-family: var(--font-roboto);
+        font-size: clamp(2rem, 5vw, 5rem);
+    }
+
+    h3 {
+        font-family: var(--font-roboto);
+        font-size: clamp(1.5rem, 2.5vw, 3rem);
+    }
+
+    p {
+        font-family: var(--font-roboto);
+        font-size: clamp(1rem, 1.5vw, 2rem);
+    }
+}
+
+.app-dark-mode {
+    #home {
+        h2 {
+            color: var(--dark-home-h2-color);
+        }
+    
+        h1 {
+            color: var(--dark-home-h1-color);
+        }
+    
+        h3 {
+            color: var(--dark-home-h3-color);
+        }
+    
+        p {
+            color: var(--dark-home-p-color);
+        }
+    }
+}

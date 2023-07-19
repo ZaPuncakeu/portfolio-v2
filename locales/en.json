@@ -1,0 +1,199 @@
+{
+    "Global": {
+        "resume": "Resume"
+    },
+    "Navbar": {
+        "nav-items": [
+            {
+                "icon": "fa fa-home",
+                "text": "Home"
+            },
+            {
+                "icon": "fa fa-file-text-o",
+                "text": "Resume"
+            },
+            {
+                "icon": "fa fa-cogs",
+                "text": "Skills"
+            },
+            {
+                "icon": "fa fa-suitcase",
+                "text": "Portfolio"
+            },
+            {
+                "icon": "fa fa-envelope",
+                "text": "Contact"
+            }
+        ]
+    },
+    "Home": {
+        "greet": "Hi everyone!",
+        "me": "I'm Anis",
+        "description": "A software engineer that enjoys coding with a cup of ☕ and share his passion with people around.",
+        "welcome": "Welcome to my personal website where you'll learn more about who I am, what I do and how to contact me!"
+    },
+    "Resume": {
+        "title": "Resume",
+        "work_experience": {
+            "title": "Work experience",
+            "work": [
+                {
+                    "year": 2023,
+                    "name": "Intern in full stack development",
+                    "institution": "MACC France",
+                    "date": "From Sept 2022 to June 2023",
+                    "address": "Châtellerault, France",
+                    "website": "https://www.macc.fr/",
+                    "description": "In the context of the software engineering module, we worked with the MACC group to develop a royalty management module.\n\nI was responsible for:",
+                    "bullets": [
+                        "Elaborating a specifications document, user stories, and acceptance tests.",
+                        "Creating various UML diagrams (Class - Sequence).",
+                        "Implementing new modules using React.ts in the front-end and Spring Boot in the back-end.",
+                        "Developing unit and integration test"
+                    ]
+                },
+                {
+                    "year": 2022,
+                    "name": "Full stack JavaScript Instructor",
+                    "institution": "GoMyCode Algeria",
+                    "date": "From Jan 2022 to Sept 2023",
+                    "address": "Babezzouar, Algeria",
+                    "website": "https://gomycode.com/dz/",
+                    "description": "I was responsible for teaching and guiding students from various backgrounds (not necessarily computer science) to learn:",
+                    "bullets": [
+                        "Algorithmic reasoning.",
+                        "Fundamentals of the web (HTTP/HTML/CSS).",
+                        "Fundamentals of JS (ES6).",
+                        "JS frameworks (React.js, Next.js).",
+                        "Basic principles of networks (protocols, IP, OSI model, ..., etc).",
+                        "Backend development (Node.js, Express, REST architecture).",
+                        "SQL databases (MySQL) and NoSQL databases (MongoDB, Firebase).",
+                        "Basics of security (encryption, hashing, trust triangle, ..., etc)."
+                    ]
+                },
+                {
+                    "year": 2021,
+                    "name": "Front end Engineer",
+                    "institution": "Educe-it",
+                    "date": "From May 2021 to July 2022",
+                    "address": "Hussein Dey, Algiers",
+                    "website": "https://educe-it.com",
+                    "description": "Educe It is a multi-service communication company.\n\nMy responsibilities included:",
+                    "bullets": [
+                        "Meeting potential clients and creating the specifications for new or existing websites.",
+                        "Developing a solution in the form of an intuitive, fast, and responsive website using the latest technologies (React/Next, Node.js, Laravel).",
+                        "Ensuring the maintenance of the solutions (including testing) and preparing documentation/user manuals."
+                    ]
+                }
+            ]
+        },
+        "education": {
+            "title": "Education",
+            "edu": [
+                {
+                    "year": 2022,
+                    "name": "Master's in Software and Big Data",
+                    "institution": "University of Poitiers",
+                    "date": "Since September 2022",
+                    "address": "Chasseneuil-du-Poitou, France",
+                    "website": "https://www.univ-poitiers.fr",
+                    "description": "Currently enrolled in my final year for my second masters degree at the University of Poitiers in France.\nCurrent valedictorian for the 1st year.\n\nKey things I'm learning:",
+                    "bullets": [
+                        "Data analytics",
+                        "Introduction to Big Data",
+                        "Business Intelligence",
+                        "Machine Learning",
+                        "Advanced C++",
+                        "Software Engineering"
+                    ]
+                },
+                {
+                    "year": 2021,
+                    "name": "Master's in Software Engineering and Information Processing",
+                    "institution": "M'hamed Bougara Boumerdes University",
+                    "date": "From Jan 2021 to July 2022",
+                    "address": "Boumerdès, Algeria",
+                    "website": "https://en.univ-boumerdes.dz",
+                    "description": "Master thesis: : IoT, design, and implementation of an autonomous car using reinforcement learning.\nAchieved with a grade of 16.5/20.\n\nImplemented with:",
+                    "bullets": [
+                        "Raspberry Pi 3 B (for physical implementation)",
+                        "Gym environment + Unity / ML Agents (for Simulation)",
+                        "Node.js - Flask.",
+                        "Socket.io",
+                        "React.js."
+                    ]
+                },
+                {
+                    "year": 2016,
+                    "name": "Bachelor's degree in Computer Systems.",
+                    "institution": "M'hamed Bougara Boumerdes University",
+                    "date": "From Sept 2016 to Dec 2020",
+                    "address": "Boumerdès, Algeria",
+                    "website": "https://en.univ-boumerdes.dz",
+                    "description": "Final year project: IoT, design, and implementation of a smart nanny.\nAchieved with a grade of 17.5/20 and congratulations from the jury.\n\nImplemented with:",
+                    "bullets": [
+                        "Raspberry Pi 3 B - Arduino UNO",
+                        "Node.js - Flask.",
+                        "Socket.io - WebRTC.",
+                        "React.js.",
+                        "Firebase."
+                    ]
+                }
+            ]
+        },
+        "hackathons": {
+            "title": "Hackathons",
+            "hacks": [
+                {
+                    "year": 2022,
+                    "name": "Master's in Software and Big Data",
+                    "institution": "University of Poitiers",
+                    "date": "Since September 2022",
+                    "address": "Chasseneuil-du-Poitou, France",
+                    "website": "https://www.univ-poitiers.fr",
+                    "description": "Currently enrolled in my final year for my second masters degree at the University of Poitiers in France.\nCurrent valedictorian for the 1st year.\n\nKey things I'm learning:",
+                    "bullets": [
+                        "Data analytics",
+                        "Introduction to Big Data",
+                        "Business Intelligence",
+                        "Machine Learning",
+                        "Advanced C++",
+                        "Software Engineering"
+                    ]
+                },
+                {
+                    "year": 2021,
+                    "name": "Master's in Software Engineering and Information Processing",
+                    "institution": "M'hamed Bougara Boumerdes University",
+                    "date": "From Jan 2021 to July 2022",
+                    "address": "Boumerdès, Algeria",
+                    "website": "https://en.univ-boumerdes.dz",
+                    "description": "Master thesis: : IoT, design, and implementation of an autonomous car using reinforcement learning.\nAchieved with a grade of 16.5/20.\n\nImplemented with:",
+                    "bullets": [
+                        "Raspberry Pi 3 B (for physical implementation)",
+                        "Gym environment + Unity / ML Agents (for Simulation)",
+                        "Node.js - Flask.",
+                        "Socket.io",
+                        "React.js."
+                    ]
+                },
+                {
+                    "year": 2016,
+                    "name": "Bachelor's degree in Computer Systems.",
+                    "institution": "M'hamed Bougara Boumerdes University",
+                    "date": "From Sept 2016 to Dec 2020",
+                    "address": "Boumerdès, Algeria",
+                    "website": "https://en.univ-boumerdes.dz",
+                    "description": "Final year project: IoT, design, and implementation of a smart nanny.\nAchieved with a grade of 17.5/20 and congratulations from the jury.\n\nImplemented with:",
+                    "bullets": [
+                        "Raspberry Pi 3 B - Arduino UNO",
+                        "Node.js - Flask.",
+                        "Socket.io - WebRTC.",
+                        "React.js.",
+                        "Firebase."
+                    ]
+                }
+            ]
+        }
+    }
+}
