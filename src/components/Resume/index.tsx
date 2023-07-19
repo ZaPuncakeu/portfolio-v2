@@ -50,8 +50,14 @@ export default function Resume() {
             <br /><br />
             <div className='selection'>
                 <button className={`${selected === 'work' ? 'selected' : ''}`} onClick={() => handleSelection('work')}>
-                    {text.Resume.work_experience.title} <i className='fa fa-angle-down'></i>
+                    {text.Resume.work_experience.title}
                 </button>
+                <button className={`${selected === 'edu' ? 'selected' : ''}`} onClick={() => handleSelection('edu')}>
+                    {text.Resume.education.title}
+                </button>
+                {/*<button className={`${selected === 'edu' ? 'selected' : ''}`} onClick={() => handleSelection('edu')}>
+                    {text.Resume.education.title}
+        </button>*/}
             </div>
             <br />
             {

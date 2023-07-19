@@ -15,8 +15,7 @@
         gap: 10px;
 
         button {
-            height: 50px;
-            width: 200px;
+            padding: 15px;
             font-size: 1rem;
             font-size: clamp(0.8rem, 1.2vw, 1rem);
             border-radius: 5px;
@@ -107,7 +106,7 @@
             }
 
             .selected {
-                /*background-color: var(--dark-resume-selection-button-border-color);*/
+                background-color: var(--dark-resume-selection-button-border-color);
                 color: var(--dark-resume-button-text-color);
             }
         }
