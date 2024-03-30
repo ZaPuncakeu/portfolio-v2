@@ -34,6 +34,23 @@
     --dark-resume-website-color: #64FFDA;
     --dark-resume-description-color: #e8f1ff;
 
+    
+    --dark-skills-container-background-color: #050d18;
+
+    --dark-skills-h1-color: #ddeaff;
+    --dark-skills-filter-border-color: #5c82ff;
+    --dark-skills-filter-color: #ddeaff;
+    --dark-skills-filter-selected-background-color: #5c82ff;
+
+    
+    --dark-portfolio-container-background-color: #050d18;
+    --dark-portfolio-section-container-background-color: #21416e;
+    --dark-portfolio-h4-color: #ddeaff;
+    --dark-portfolio-p-color: #ccd6f6;
+    --dark-portfolio-span-b-color: #64FFDA;
+    --dark-portfolio-span-color: rgb(193, 201, 214);
+    --dark-portfolio-website-button-background-color: #5c82ff;
+
     /* Light mode */
     --light-navbar-primary-color: #212121;
     --light-main-background-color:rgb(222, 222, 222);

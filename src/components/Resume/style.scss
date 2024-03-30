@@ -1,10 +1,10 @@
 #resume {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 
     &>h1 {
         font-family: var(--font-roboto);
-        font-size: clamp(2rem, 5vw, 5rem);
+        font-size: clamp(2rem, 3vw, 4rem);
         text-transform: uppercase;
         text-align: center;
     }
@@ -107,7 +107,7 @@
             }
 
             .selected {
-                /*background-color: var(--dark-resume-selection-button-border-color);*/
+                background-color: var(--dark-resume-selection-button-border-color);
                 color: var(--dark-resume-button-text-color);
             }
         }

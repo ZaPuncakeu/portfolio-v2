@@ -19,11 +19,22 @@ interface ResumeDataProps {
     experiences: ExperienceType[]
 }
 
+const options = [
+    "work_experience",
+    "education"
+]
+
 export default function Resume() {
     const { text } = useLanguage();
-    const [selected, setSelected] = useState('work');
+    const [selected, setSelected] = useState('work_experience');
+    const [optionsOpened, setOptionsOpened] = useState(false);
+    
+    function toggleOptions() {
+        setOptionsOpened(!optionsOpened);
+    }
 
     function handleSelection(selection:string) {
+        setOptionsOpened(false);
         setSelected(selection);
     }
 
@@ -49,17 +60,44 @@ export default function Resume() {
             <h1><span className='fa fa-file-text-o'></span>&nbsp;{text.Resume.title}</h1>
             <br /><br />
             <div className='selection'>
-                <button className={`${selected === 'work' ? 'selected' : ''}`} onClick={() => handleSelection('work')}>
-                    {text.Resume.work_experience.title} <i className='fa fa-angle-down'></i>
+                <button className='selected' onClick={() => toggleOptions()}>
+                    {text.Resume[selected].title} &nbsp; <i className={`fa fa-angle-${optionsOpened ? 'left' : 'right'}`}></i>
                 </button>
+                {
+                    optionsOpened &&
+                    options.filter(o => o !== selected).map((o, i) => {
+                        return(
+                            <motion.button 
+                                key={`option-${o}`} 
+                                onClick={() => handleSelection(o)}
+                                initial={{
+                                    opacity: 0,
+                                    x: -10
+                                }}
+
+                                animate= {{
+                                    x: 0,
+                                    opacity: 1
+                                }}
+
+                                transition={{
+                                    duration: 0.5,
+                                    delay: (i / 10)
+                                }}
+                            >
+                                {text.Resume[o].title}
+                            </motion.button>
+                        )
+                    })
+                }
             </div>
             <br />
             {
-                selected === "work" ?
-                <ResumeData mkey={"work"} experiences={text.Resume.work_experience.work} />
+                selected === "work_experience" ?
+                <ResumeData key={"work-data"} mkey={"work"} experiences={text.Resume.work_experience.work} />
                 :
-                selected === "edu" ?
-                <ResumeData mkey={"edu"} experiences={text.Resume.education.edu} />
+                selected === "education" ?
+                <ResumeData key={"edu-data"} mkey={"edu"} experiences={text.Resume.education.edu} />
                 :
                 null
             }
@@ -141,9 +179,9 @@ function ResumeData({mkey, experiences}:ResumeDataProps) {
                 <br />
                 <ul id='resume-bullets'>
                     {
-                        experiences[selectedExperience].bullets.map((info) => {
+                        experiences[selectedExperience].bullets.map((info, index) => {
                             return(
-                                <li>{info}</li>
+                                <li key={`bullet-info-${index}`}>{info}</li>
                             )
                         })
                     }

@@ -1,12 +1,97 @@
-#portfolio {
+#skills {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+
+    &>h1 {
+        text-transform: uppercase;
+        font-family: var(--font-roboto);
+        font-size: clamp(2rem, 3vw, 4rem);
+    }
+
+    &>p {
+        font-family: var(--font-roboto);
+        font-size: clamp(1rem, 1.5vw, 2.5rem);
+    }
+
+    .skills-container 
+    {
+        width: 100%;
+        background-color: var(--dark-skills-container-background-color);
+        border-radius: 10px;
+        .skills-filter {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 25px;
+            flex-wrap: wrap;
+            button {
+                border: solid var(--dark-skills-filter-border-color) 2px;
+                color: var(--dark-skills-filter-color);
+                padding: 10px;
+                border-radius: 20px;
+                background-color: transparent;
+                cursor: pointer;
+                transition: background-color 0.2s ease;
+            }
+        }
+
+
+        .skills-icons {
+            padding: 50px 0;
+            width: 95%;
+            flex-wrap: wrap;
+            gap: 55px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .skill-container {
+            .selected-category {
+                background-color: var(--dark-skills-filter-selected-background-color);
+            }
+            
+            text-align: center;
+            .skill-icon {
+                font-size: 6rem;
+                transition: font-size 0.2s ease;
+                cursor: pointer;
+                &:hover {
+                    font-size: 7rem;
+                }
+            }
+
+            span {
+                color: var(--dark-skills-h1-color);
+                font-size: 1.3rem;
+                font-family: var(--font-roboto);
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 
 
 .app-dark-mode {
-    #portfolio {
-        
+    #skills {
+        &>h1 {
+            color: var(--dark-skills-h1-color);
+        }
+
+        &>p {
+            color: var(--dark-home-p-color);
+        }
+
+        .skills-container 
+        {
+            
+            .skills-filter {
+
+                .selected-category {
+                    background-color: var(--dark-skills-filter-selected-background-color);
+                }
+            }
+        }
     }
 }
