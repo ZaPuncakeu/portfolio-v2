@@ -1,12 +1,58 @@
 #portfolio {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 100px;
+    &>h1 {
+        text-transform: uppercase;
+        font-family: var(--font-roboto);
+        font-size: clamp(2rem, 3vw, 4rem);
+        text-align: center;
+    }
+
+    &>p {
+        font-family: var(--font-roboto);
+        font-size: clamp(1rem, 1.5vw, 2.5rem);
+    }
+
+    .work-container 
+    {
+        box-sizing: border-box;
+        border-radius: 15px;
+        padding: 15px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        h3 {
+            font-size: clamp(1.5rem, 2vw, 3rem);
+            font-family: var(--font-roboto);
+            padding-left: 5px;
+        }
+
+        &>div {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 15px;
+        }
+    }
 }
 
 
 
 .app-dark-mode {
     #portfolio {
-        
+        &>h1 {
+            color: var(--dark-skills-h1-color);
+        }
+
+        &>p {
+            color: var(--dark-home-p-color);
+        }
+
+        .work-container 
+        {
+            background-color: var(--dark-portfolio-section-container-background-color);
+            h3 {
+                color: var(--dark-skills-h1-color);
+            }
+        }
     }
 }

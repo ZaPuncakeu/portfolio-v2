@@ -1,6 +1,8 @@
 {
     "Global": {
-        "resume": "Resume"
+        "resume": "Resume",
+        "check-repo": "Github",
+        "check-website": "Live Demo"
     },
     "Navbar": {
         "nav-items": [
@@ -37,6 +39,20 @@
         "work_experience": {
             "title": "Work experience",
             "work": [
+                {
+                    "year": 2023,
+                    "name": "Apprentice in Research and Innovation",
+                    "institution": "DARVA",
+                    "date": "From Sept 2023 to Present",
+                    "address": "Niort, France",
+                    "website": "https://www.darva.com/",
+                    "description": "During my final University year, I was taken as an apprentice in the Lab of the insurance software editor company called DARVA where I worked as a researcher.\n\nMy main mission was :",
+                    "bullets": [
+                        "Be up to date with the latest pieces of tech and their potential use in the context of insurance softwares.",
+                        "Creating a Configuration Management Database to map the internal information system automatically.",
+                        "Animating workshops and innovation talks."
+                    ]
+                },
                 {
                     "year": 2023,
                     "name": "Intern in full stack development",
@@ -194,6 +210,388 @@
                     ]
                 }
             ]
+        }
+    },
+    "Skills": {
+        "title": "Skills",
+        "description": "During my career, I have used several techs for diverse purposes. But as a software engineer, I am not bound by any technology as I can adapt quickly depending on the need.",
+        "glimpse": "Have a glimps of what I know:",
+        "categories": [
+            {
+                "name": "All",
+                "key": "all"
+            },
+            {
+                "name": "Front end development",
+                "key": "front"
+            },
+            {
+                "name": "Back end development",
+                "key": "back"
+            },
+            {
+                "name": "Mobile development",
+                "key": "mobile"
+            },
+            {
+                "name": "Databases",
+                "key": "databases"
+            },
+            {
+                "name": "Artificial Intelligence",
+                "key": "ai"
+            },
+            {
+                "name": "Infrastructure",
+                "key": "infra"
+            },
+            {
+                "name": "Other",
+                "key": "other"
+            }
+        ],
+        "skills": {
+            "front": [
+                {
+                    "name": "HTML",
+                    "icon": "devicon-html5-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "CSS",
+                    "icon": "devicon-css3-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "devicon-javascript-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "TypeScript",
+                    "icon": "devicon-typescript-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "Bootstrap",
+                    "icon": "devicon-bootstrap-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "Bulma",
+                    "icon": "devicon-bulma-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "Tailwind",
+                    "icon": "devicon-tailwindcss-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "Sass",
+                    "icon": "devicon-sass-original colored",
+                    "color": ""
+                },
+                {
+                    "name": "ReactJs",
+                    "icon": "devicon-react-original colored",
+                    "color": ""
+                },
+                {
+                    "name": "NextJs",
+                    "icon": "devicon-nextjs-original colored",
+                    "color": "#FFFFFF"
+                },
+                {
+                    "name": "VueJs",
+                    "icon": "devicon-vuejs-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "jQuery",
+                    "icon": "devicon-jquery-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "Redux",
+                    "icon": "devicon-redux-original colored",
+                    "color": ""
+                }
+            ],
+            "back": [
+                {
+                    "name": "NodeJs",
+                    "icon": "devicon-nodejs-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "NestJs",
+                    "icon": "devicon-nestjs-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "Flask",
+                    "icon": "devicon-flask-original colored",
+                    "color": "#FFFFFF"
+                },
+                {
+                    "name": "PHP",
+                    "icon": "devicon-php-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "Spring",
+                    "icon": "devicon-spring-plain colored",
+                    "color": ""
+                }, 
+                {
+                    "name": "Quarkus",
+                    "icon": "logos:quarkus-icon",
+                    "color": "#FFFFFF"
+                }
+            ],
+            "mobile": [
+                {
+                    "name": "Android studio",
+                    "icon": "devicon-androidstudio-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "React native",
+                    "icon": "devicon-react-original colored",
+                    "color": ""
+                }
+            ],
+            "databases": [
+                {
+                    "name": "Postgresql",
+                    "icon": "devicon-postgresql-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "MySQL",
+                    "icon": "devicon-mysql-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "Oracle",
+                    "icon": "devicon-oracle-original colored",
+                    "color": ""
+                },
+                {
+                    "name": "SQLite",
+                    "icon": "devicon-sqlite-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": "devicon-mongodb-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "Firebase",
+                    "icon": "devicon-firebase-plain colored",
+                    "color": ""
+                }
+            ],
+            "ai": [
+                {
+                    "name": "Numpy",
+                    "icon": "devicon-numpy-original colored",
+                    "color": ""
+                },
+                {
+                    "name": "Pandas",
+                    "icon": "devicon-pandas-original colored",
+                    "color": ""
+                },
+                {
+                    "name": "Tensorflow",
+                    "icon": "devicon-tensorflow-original colored",
+                    "color": ""
+                }
+            ],
+            "infra": [
+                {
+                    "name": "Docker",
+                    "icon": "devicon-docker-plain",
+                    "color": "#019BC6"
+                },
+                {
+                    "name": "Jenkins",
+                    "icon": "devicon-jenkins-line colored",
+                    "color": ""
+                },
+                {
+                    "name": "Kubernetes",
+                    "icon": "devicon-kubernetes-plain",
+                    "color": "#486BB3"
+                }
+            ],
+            "other": [
+                {
+                    "name": "Unity",
+                    "icon": "devicon-unity-original colored",
+                    "color": "#FFFFFF"
+                },
+                {
+                    "name": "Java",
+                    "icon": "devicon-java-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "C",
+                    "icon": "devicon-c-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "C++",
+                    "icon": "devicon-cplusplus-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "C#",
+                    "icon": "devicon-csharp-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "Ocaml",
+                    "icon": "devicon-ocaml-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "Github",
+                    "icon": "devicon-github-original colored",
+                    "color": "#FFFFFF"
+                },
+                {
+                    "name": "Gitlab",
+                    "icon": "devicon-gitlab-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "Graphql",
+                    "icon": "devicon-graphql-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "Jupyter",
+                    "icon": "devicon-jupyter-plain-wordmark colored",
+                    "color": ""
+                },
+                {
+                    "name": "LaTeX",
+                    "icon": "devicon-latex-original colored",
+                    "color": "#FFFFFF"
+                },
+                {
+                    "name": "Jest",
+                    "icon": "devicon-jest-plain colored",
+                    "color": ""
+                },
+                {
+                    "name": "Coq",
+                    "icon": "file-icons:coq",
+                    "color": "#FFFFFF"
+                }
+            ]
+        }
+    },
+    "Portfolio": {
+        "title": "Portfolio",
+        "description": "Check out some of the work I produced!",
+        "categories": [
+            {
+                "name": "Websites",
+                "key": "websites"
+            },
+            {
+                "name": "Mobile apps",
+                "key": "mobile-apps"
+            },
+            {
+                "name": "Other creations",
+                "key": "other"
+            },
+            {
+                "name": "Workshops",
+                "key": "workshops"
+            }
+        ],
+        "works": {
+            "websites": [
+                {
+                    "title": "Resumeo",
+                    "description": "An open source Resume generator, where you can create a simple nice looking resume and print it. The website is available in French and English. People can fork the code and create their own models using React",
+                    "tools": {
+                        "title": "Built with:",
+                        "tools": ["ReactJs", "Redux", "Sass"]
+                    },
+                    "img": "/images/portfolio/websites/resumeo.png",
+                    "github": "https://github.com/ZaPuncakeu/resumeo",
+                    "website": "https://resumeo-cv.netlify.app"
+                },
+                {
+                    "title": "Dareadventure",
+                    "description": "An omegle-like website that connects complete strangers in real time to speak through video chat and text-messages",
+                    "tools": {
+                        "title": "Built with:",
+                        "tools": ["ReactJs", "TypeScript", "Firebase", "Nodejs", "Socket.io", "WebRTC"]
+                    },
+                    "img": "/images/portfolio/websites/dareadventure.png",
+                    "github": "https://github.com/ZaPuncakeu/dareadventure",
+                    "website": "https://dareadventure.netlify.app"
+                },
+                {
+                    "title": "The Zoo",
+                    "description": "A Zoo management website that offers information cards about the animals within and an interactive map. An admin management has also been implemented in order to add, edit or delete said animals. This website was made as a university project at the university of Poitiers",
+                    "tools": {
+                        "title": "Built with:",
+                        "tools": ["ReactJs", "Postgresql", "Nodejs", "Vite", "Sass"]
+                    },
+                    "img": "/images/portfolio/websites/thezoo.png",
+                    "github": "https://github.com/ZaPuncakeu/zoo-management",
+                    "website": ""
+                },
+                {
+                    "title": "JSPCC",
+                    "description": "A French pseudo code compiler entierly written in JavaScript. I used the recursive descendant parser technique (top-down parser). The memory and stack management were written manually as well.",
+                    "tools": {
+                        "title": "Built with:",
+                        "tools": ["JavaScript", "jQuery"]
+                    },
+                    "img": "/images/portfolio/websites/jspcc.png",
+                    "github": "https://github.com/ZaPuncakeu/JSPCC",
+                    "website": "https://zapuncakeu.github.io/JSPCC"
+                },
+                {
+                    "title": "Von Edits Portfolio",
+                    "description": "The portfolio features a series of game edits highlighting the video editor's specialization in gaming content. Each edit showcases their skill in blending gameplay footage with effects and sound design to create engaging content for gaming audiences.",
+                    "tools": {
+                        "title": "Built with:",
+                        "tools": ["ReactJs", "Firebase", "Nodejs"]
+                    },
+                    "img": "/images/portfolio/websites/von-edits-portfolio.png",
+                    "github": "",
+                    "website": "https://von-edits.netlify.app"
+                },
+                {
+                    "title": "My portfolio",
+                    "description": "The portfolio presents a comprehensive overview of my professional journey, featuring my career highlights, resume, and skill set.",
+                    "tools": {
+                        "title": "Built with:",
+                        "tools": ["ReactJs", "TypeScript", "Sass"]
+                    },
+                    "img": "/images/portfolio/websites/von-edits-portfolio.png",
+                    "github": "",
+                    "website": "https://von-edits.netlify.app"
+                }
+            ],
+            "mobile-apps": [],
+            "other": [],
+            "workshops": [],
+            "courses": [],
+            "papers": []
         }
     }
 }

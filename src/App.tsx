@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar"
 import { RootState } from "./store";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
+import Skills from "./components/Skills";
 
 function App() {
   const theme:string = useSelector((state: RootState) => state.theme.theme);
@@ -15,6 +16,7 @@ function App() {
       <Navbar/>
       <Home/>
       <Resume/>
+      <Skills/>
       <Portfolio/>
     </div>
   )
