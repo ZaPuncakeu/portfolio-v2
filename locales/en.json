@@ -521,6 +521,17 @@
         "works": {
             "websites": [
                 {
+                    "title": "Von Edits Portfolio",
+                    "description": "The portfolio features a series of game edits highlighting the video editor's specialization in gaming content. Each edit showcases their skill in blending gameplay footage with effects and sound design to create engaging content for gaming audiences.",
+                    "tools": {
+                        "title": "Built with:",
+                        "tools": ["ReactJs", "Firebase", "Nodejs"]
+                    },
+                    "img": "/images/portfolio/websites/von-edits-portfolio.png",
+                    "github": "",
+                    "website": "https://von-edits.netlify.app"
+                },
+                {
                     "title": "Resumeo",
                     "description": "An open source Resume generator, where you can create a simple nice looking resume and print it. The website is available in French and English. People can fork the code and create their own models using React",
                     "tools": {
@@ -565,29 +576,30 @@
                     "website": "https://zapuncakeu.github.io/JSPCC"
                 },
                 {
-                    "title": "Von Edits Portfolio",
-                    "description": "The portfolio features a series of game edits highlighting the video editor's specialization in gaming content. Each edit showcases their skill in blending gameplay footage with effects and sound design to create engaging content for gaming audiences.",
-                    "tools": {
-                        "title": "Built with:",
-                        "tools": ["ReactJs", "Firebase", "Nodejs"]
-                    },
-                    "img": "/images/portfolio/websites/von-edits-portfolio.png",
-                    "github": "",
-                    "website": "https://von-edits.netlify.app"
-                },
-                {
                     "title": "My portfolio",
                     "description": "The portfolio presents a comprehensive overview of my professional journey, featuring my career highlights, resume, and skill set.",
                     "tools": {
                         "title": "Built with:",
                         "tools": ["ReactJs", "TypeScript", "Sass"]
                     },
-                    "img": "/images/portfolio/websites/von-edits-portfolio.png",
-                    "github": "",
-                    "website": "https://von-edits.netlify.app"
+                    "img": "/images/portfolio/websites/portfolio.png",
+                    "github": "https://github.com/ZaPuncakeu/portfolio-v2",
+                    "website": "https://anisr.netlify.app"
                 }
             ],
-            "mobile-apps": [],
+            "mobileApps": [
+                {
+                    "title": "Mahd",
+                    "description": "Mahd was a mobile app that was created during a hackathon where we spent 48 hours of non-stop coding. The app tracks the physiological parameters of newborns in order to prevent sudden infant death syndrome. The application uses the Terra API to enable any wearable watch to be used for monitoring.",
+                    "tools": {
+                        "title": "Built with:",
+                        "tools": ["Nodejs", "React Native", "Flask", "Socket.io", "Firebase"]
+                    },
+                    "img": "/images/portfolio/mobile-apps/mahd.png",
+                    "github": "https://github.com/ZaPuncakeu/mahdapp-hackit",
+                    "website": ""
+                }
+            ],
             "other": [],
             "workshops": [],
             "courses": [],

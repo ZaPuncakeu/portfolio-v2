@@ -46,7 +46,7 @@ export default function Portfolio() {
             <div className='slider-container'>
                 <Slider {...settings}>
                     <Websites text={text} />
-                    <Websites text={text} />
+                    <MobileApps text={text} />
                 </Slider>
                 <br /><br />
             </div>
@@ -83,6 +83,43 @@ function Websites({ text }: any) {
                                     key={`card-website-${JSON.stringify(website)}-${index}`}
                                     mkey={`website-${JSON.stringify(website)}-${index}`}
                                     data={website}
+                                />
+                            )
+                        })
+                }
+            </div>
+        </motion.div>
+    )
+}
+
+function MobileApps({ text }: any) {
+    return (
+        <motion.div
+            initial={{
+                height: "65px"
+            }}
+
+            animate={{
+                height: "605px"
+            }}
+
+            transition={{
+                delay: 2
+            }}
+
+            className='work-container'
+        >
+            <h3>{text.Portfolio.categories[1].name}</h3>
+            <br />
+            <div>
+                {
+                    text.Portfolio.works.mobileApps
+                        .map((app: any, index: number) => {
+                            return (
+                                <Card
+                                    key={`card-mobile-${JSON.stringify(app)}-${index}`}
+                                    mkey={`mobile-${JSON.stringify(app)}-${index}`}
+                                    data={app}
                                 />
                             )
                         })
