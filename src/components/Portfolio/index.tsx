@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../../hooks/useLanguage';
 import './style.scss';
 import { motion } from 'framer-motion';
@@ -8,6 +8,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useWindowSize } from '../../hooks/useWindowSize';
+import { useScroll } from '../../hooks/useScroll';
 
 const settings = {
     dots: false,
@@ -22,7 +23,30 @@ export default function Portfolio() {
 
     const { width } = useWindowSize();
 
+    const { scrollY } = useScroll();
+
+    const [displayed, setDisplayed] = useState(false);
+
+    const ref = useRef(null);
+
+    useEffect(() => {
+        if(!displayed) {
+            if (ref.current) {
+                const { top } = ref.current.getBoundingClientRect();
+                setDisplayed(scrollY >= (top - 150));
+            }
+        }
+    }, [scrollY]);
+    
     return (
+        !displayed ? 
+        <div
+            id="portfolio"
+            style={{height: '100vh'}}
+            ref={ref}
+        >
+        </div>
+        :
         <motion.div
             id="portfolio"
             className='section-page'

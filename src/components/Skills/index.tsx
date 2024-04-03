@@ -1,13 +1,37 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../../hooks/useLanguage';
 import './style.scss';
 import { motion } from 'framer-motion';
 import { Icon } from '@iconify/react';
+import { useScroll } from '../../hooks/useScroll';
 
 export default function Skills() {
     const { text } = useLanguage();
     const [selectedCategory, setSelectedCategory] = useState('all');
+    const { scrollY } = useScroll();
+
+    const [displayed, setDisplayed] = useState(false);
+
+    const ref = useRef(null);
+
+    useEffect(() => {
+        if(!displayed) {
+            if (ref.current) {
+                const { top } = ref.current.getBoundingClientRect();
+                setDisplayed(scrollY >= (top - 150));
+            }
+        }
+    }, [scrollY]);
+    
     return (
+        !displayed ?
+        <div
+            id="skills" 
+            style={{height: '100vh'}}
+            ref={ref}
+        >
+        </div>
+        :
         <motion.div 
             id="skills" 
             className='section-page'
