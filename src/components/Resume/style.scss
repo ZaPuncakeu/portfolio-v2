@@ -1,7 +1,8 @@
 #resume {
     width: 90%;
     min-height: 100vh;
-
+    padding-top: 70px;
+    
     &>h1 {
         font-family: var(--font-roboto);
         font-size: clamp(2rem, 3vw, 4rem);

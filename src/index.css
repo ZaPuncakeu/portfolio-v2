@@ -44,12 +44,15 @@
 
     
     --dark-portfolio-container-background-color: #050d18;
-    --dark-portfolio-section-container-background-color: #21416e;
+    --dark-portfolio-section-container-background-color: #16417d95;
     --dark-portfolio-h4-color: #ddeaff;
     --dark-portfolio-p-color: #ccd6f6;
     --dark-portfolio-span-b-color: #64FFDA;
     --dark-portfolio-span-color: rgb(193, 201, 214);
     --dark-portfolio-website-button-background-color: #5c82ff;
+
+    
+    --dark-contact-icons-colors: #ddeaff;
 
     /* Light mode */
     --light-navbar-primary-color: #212121;
@@ -59,6 +62,7 @@
 
 ::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -75,6 +79,7 @@
     margin: 0;
     padding: 0;
     outline: none;
+    text-decoration: none;
 }
 
 #app {

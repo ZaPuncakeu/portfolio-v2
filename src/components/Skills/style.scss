@@ -1,6 +1,7 @@
 #skills {
     width: 100%;
-    min-height: 100vh;
+    
+    padding-top: 70px;
 
     &>h1 {
         text-transform: uppercase;
@@ -10,7 +11,7 @@
 
     @media (max-width: 860px) {
         width: 90%;
-        margin: auto;
+        margin: 150px auto;
     }
 
     &>p {
@@ -25,11 +26,14 @@
         border-radius: 10px;
         .skills-filter {
             display: flex;
-            justify-content: center;
             gap: 15px;
             padding: 25px;
-            flex-wrap: wrap;
+            width: 90%;
+            margin: auto;
+            overflow: auto;
+            box-sizing: border-box;
             button {
+                flex-shrink: 0;
                 border: solid var(--dark-skills-filter-border-color) 2px;
                 color: var(--dark-skills-filter-color);
                 padding: 10px;
