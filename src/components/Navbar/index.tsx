@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useLanguage } from '../../hooks/useLanguage';
 import { useWindowSize } from '../../hooks/useWindowSize';
 import './style-desktop.scss';
+import './style-mobile.scss';
 import { RootState } from '../../store';
 import { changeTheme } from '../../slices/themeSlice';
 
@@ -16,7 +17,7 @@ export default function Navbar(){
                 width > 860 ?
                     <DesktopNavbar text={text} theme={theme} />
                 :
-                    null
+                    <MobileNavbar text={text} theme={theme}/>
             }
         </>
     )
@@ -57,6 +58,28 @@ function DesktopNavbar({ text, theme }:any) {
                 <button className='styled-button'>
                     {text.Global.resume}
                 </button>
+            </div>
+        </nav>
+    )
+}
+
+function MobileNavbar({ text, theme }:any) {
+    
+    const dispatch = useDispatch();
+    return (
+        <nav id={`navbar-mobile`} className={`navbar-dark-mode`}>
+            <div className='nav-container'>
+                {
+                    text.Navbar['nav-items'].map((nav:any, index:number) => {
+                        return(
+                            <button key={`nav-item-${index}`}>
+                                <i className={nav.icon}></i>
+                                <br />
+                                {nav.text}
+                            </button>
+                        )
+                    })
+                }
             </div>
         </nav>
     )

@@ -7,6 +7,7 @@ import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 const settings = {
     dots: false,
@@ -18,6 +19,8 @@ const settings = {
 
 export default function Portfolio() {
     const { text } = useLanguage();
+
+    const { width } = useWindowSize();
 
     return (
         <motion.div
@@ -44,7 +47,7 @@ export default function Portfolio() {
             </h1>
             <br /><br />
             <div className='slider-container'>
-                <Slider {...settings}>
+                <Slider arrows={width >= 860} {...settings}>
                     <Websites text={text} />
                     <MobileApps text={text} />
                 </Slider>

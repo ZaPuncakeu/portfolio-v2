@@ -7,6 +7,10 @@
     transition: transform 0.2s ease;
     flex-shrink: 0;
 
+    @media (max-width: 860px) {
+        width: 100%;
+    }
+
     &:hover {
         /*transform: scale(1.1);*/
     }

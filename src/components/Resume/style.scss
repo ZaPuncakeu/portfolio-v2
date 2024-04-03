@@ -1,5 +1,5 @@
 #resume {
-    width: 100%;
+    width: 90%;
     min-height: 100vh;
 
     &>h1 {
@@ -8,13 +8,13 @@
         text-transform: uppercase;
         text-align: center;
     }
-
+    
     .selection {
         width: 100%;
         display: flex;
         gap: 10px;
-
-        button {
+        overflow: auto;
+        .type {
             height: 50px;
             width: 200px;
             font-size: 1rem;
@@ -23,12 +23,39 @@
             background: transparent;
             cursor: pointer;
         }
+
+        .selection-container {
+            display: flex;
+            
+            /*.type {
+                @media (max-width: 860px) {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+            }*/
+            
+            .career-option {
+                height: 50px;
+                width: 25px;
+                font-size: 1rem;
+                font-size: clamp(0.8rem, 1.2vw, 1rem);
+                border-radius: 5px;
+                background: transparent;
+                cursor: pointer;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
     }
     
     #content-container {
         width: 100%;
         display: flex;
         gap: 25px;
+
+        @media (max-width: 860px) {
+            flex-direction: column;    
+        }
     }
 
     .exp-name 
@@ -40,6 +67,14 @@
 
         flex-grow: 0;
         flex-shrink: 0;
+
+        @media (max-width: 860px) {
+            overflow: auto;
+            flex-direction: row;    
+            width: 100%;
+            padding-bottom: 15px;
+        }
+
         button {
             width: 100%;
             padding: 15px 0;
@@ -50,6 +85,12 @@
             font-family: var(--font-roboto);
             cursor: pointer;
             transition: background-color 0.2s ease;
+            
+            @media (max-width: 860px) {
+                flex-direction: row;    
+                width: auto;
+                padding: 5px 15px;
+            }
         }
     }
 

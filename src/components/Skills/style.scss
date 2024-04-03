@@ -8,6 +8,11 @@
         font-size: clamp(2rem, 3vw, 4rem);
     }
 
+    @media (max-width: 860px) {
+        width: 90%;
+        margin: auto;
+    }
+
     &>p {
         font-family: var(--font-roboto);
         font-size: clamp(1rem, 1.5vw, 2.5rem);
