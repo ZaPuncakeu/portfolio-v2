@@ -2,6 +2,12 @@
     width: 100%;
     min-height: 100vh;
     padding-top: 100px;
+
+    @media (max-width: 860px) {
+        width: 90%;
+        margin: auto;
+    }
+
     &>h1 {
         text-transform: uppercase;
         font-family: var(--font-roboto);
@@ -32,6 +38,10 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: 15px;
+
+            @media (max-width: 860px) {
+                grid-template-columns: none;
+            }
         }
     }
 }

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useLanguage } from '../../hooks/useLanguage';
 import './style.scss';
 import { motion } from 'framer-motion';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 interface ExperienceType {
     year: 2022,
@@ -28,14 +29,21 @@ export default function Resume() {
     const { text } = useLanguage();
     const [selected, setSelected] = useState('work_experience');
     const [optionsOpened, setOptionsOpened] = useState(false);
+    const [careerOpened, setCareerOpened] = useState(false);
+    const { width } = useWindowSize();
     
     function toggleOptions() {
         setOptionsOpened(!optionsOpened);
     }
 
+    function toggleCarrerOpened() {
+        setCareerOpened(!careerOpened);
+    }
+
     function handleSelection(selection:string) {
         setOptionsOpened(false);
         setSelected(selection);
+        setCareerOpened(false);
     }
 
     return (
@@ -60,14 +68,21 @@ export default function Resume() {
             <h1><span className='fa fa-file-text-o'></span>&nbsp;{text.Resume.title}</h1>
             <br /><br />
             <div className='selection'>
-                <button className='selected' onClick={() => toggleOptions()}>
-                    {text.Resume[selected].title} &nbsp; <i className={`fa fa-angle-${optionsOpened ? 'left' : 'right'}`}></i>
-                </button>
+                <div className='selection-container'>
+                    <button className='selected type' onClick={() => toggleOptions()}>
+                        {text.Resume[selected].title} &nbsp; <i className={`fa fa-angle-${optionsOpened ? 'left' : 'right'}`}></i>
+                    </button>
+                    {/*
+                        width <= 860 &&
+                        <button className='career-option' onClick={() => toggleCarrerOpened()}><i className={`fa fa-angle-${careerOpened ? 'up' : 'down'}`}/></button>
+        */}
+                </div>
                 {
                     optionsOpened &&
                     options.filter(o => o !== selected).map((o, i) => {
                         return(
                             <motion.button 
+                                className='type'
                                 key={`option-${o}`} 
                                 onClick={() => handleSelection(o)}
                                 initial={{
@@ -107,9 +122,10 @@ export default function Resume() {
 
 function ResumeData({mkey, experiences}:ResumeDataProps) {
     const [selectedExperience, setSelectedExperience] = useState(0);
-    
+
     function handleSelect(selection:number) {
         setSelectedExperience(selection);
+        //career.setCareerOpened(false);
     }
 
     return(
