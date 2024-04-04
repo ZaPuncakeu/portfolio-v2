@@ -7,7 +7,7 @@ interface LanguageState {
 }
 
 const initialState: LanguageState = {
-    language: window.localStorage.getItem('portfolio-anis-language') || 'en'
+    language: window.localStorage.getItem('portfolio-anis-language') || navigator.language.split('-')[0] || 'fr'
 }
 
 const languageSlice = createSlice({
@@ -16,6 +16,7 @@ const languageSlice = createSlice({
     reducers: {
         changeLanguage: (state, action: PayloadAction<string>) => {
             state.language = action.payload;
+            window.localStorage.setItem('portfolio-anis-language', action.payload);
         }
     }
 })

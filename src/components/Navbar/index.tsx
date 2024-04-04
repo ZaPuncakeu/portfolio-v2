@@ -7,6 +7,7 @@ import { RootState } from '../../store';
 import { changeTheme } from '../../slices/themeSlice';
 import { useEffect, useState } from 'react';
 import { changeLanguage } from '../../slices/languageSlice';
+import Contact from '../Contact';
 
 export default function Navbar(){
     const { text } = useLanguage();
@@ -22,19 +23,28 @@ export default function Navbar(){
         'contact'
     ]);
 
+    const [contactOpened, setContactOpened] = useState(false);
+
     return(
         <>
             {
                 width > 860 ?
-                    <DesktopNavbar text={text} theme={theme} ids={ids} language={lang} />
+                    <DesktopNavbar text={text} theme={theme} ids={ids} language={lang} setContactOpened={setContactOpened}/>
                 :
-                    <MobileNavbar text={text} theme={theme} ids={ids} />
+                    <MobileNavbar text={text} theme={theme} ids={ids} setContactOpened={setContactOpened}/>
+            }
+
+            {
+                contactOpened ? 
+                    <Contact onClose={() => setContactOpened(false)} />
+                :
+                    null
             }
         </>
     )
 }
 
-function DesktopNavbar({ text, theme, ids, language }:any) {
+function DesktopNavbar({ text, theme, ids, language, setContactOpened }:any) {
     
     const dispatch = useDispatch();
     return (
@@ -56,7 +66,7 @@ function DesktopNavbar({ text, theme, ids, language }:any) {
                         return(
                             <button 
                                 key={`nav-item-${index}`}
-                                onClick={e => document.querySelector(`#${ids[index]}`).scrollIntoView({ behavior: 'smooth' })}
+                                onClick={e => nav.icon.includes('envelope') ? setContactOpened(true) : document.querySelector(`#${ids[index]}`).scrollIntoView({ behavior: 'smooth' })}
                             >
                                 <i className={nav.icon}></i>
                                 &nbsp;&nbsp;
@@ -69,15 +79,26 @@ function DesktopNavbar({ text, theme, ids, language }:any) {
 
             <div className='options-nav'>
                 <button onClick={e => dispatch(changeTheme(theme === 'light' ? 'dark' : 'light'))} className={`fa ${theme === 'light' ? 'fa-sun-o' : 'fa-moon-o'} theme-button`}></button>
-                <button className='styled-button' onClick={e => dispatch(changeLanguage(language === 'en' ? 'fr' : 'en'))}>
-                    <i className='fa fa-language'></i>&nbsp;{text.Global[language]}
-                </button>
+                <div
+                    onClick={e => dispatch(changeLanguage('en'))} 
+                    className={`${language === 'en' ? 'selected-lang' : ''}`}
+                >
+                    <img src="/images/icons/en.png" alt="" className={`flag-icon`}/>
+                    <br />
+                </div>
+                <div
+                    onClick={e => dispatch(changeLanguage('fr'))}  
+                    className={`${language === 'fr' ? 'selected-lang' : ''}`}
+                >
+                    <img src="/images/icons/fr.png" alt="" className={`flag-icon`}/>
+                    <br />
+                </div>
             </div>
         </nav>
     )
 }
 
-function MobileNavbar({ text, theme, ids, language }:any) {
+function MobileNavbar({ text, theme, ids, language, setContactOpened }:any) {
     
     return (
         <nav id={`navbar-mobile`} className={`navbar-dark-mode`}>
@@ -87,7 +108,7 @@ function MobileNavbar({ text, theme, ids, language }:any) {
                         return(
                             <button 
                                 key={`nav-item-${index}`} 
-                                onClick={e => document.querySelector(`#${ids[index]}`).scrollIntoView({ behavior: 'smooth' })}
+                                onClick={e => nav.icon.includes('envelope') ? setContactOpened(true) : document.querySelector(`#${ids[index]}`).scrollIntoView({ behavior: 'smooth' })}
                             >
                                 <i className={nav.icon}></i>
                                 <br />

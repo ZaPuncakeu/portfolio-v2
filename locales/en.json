@@ -4,7 +4,8 @@
         "check-repo": "Github",
         "check-website": "Live Demo",
         "fr": "Français",
-        "en": "English"
+        "en": "English",
+        "close": "Close"
     },
     "Navbar": {
         "nav-items": [
@@ -196,7 +197,7 @@
                 },
                 {
                     "year": 2021,
-                    "name": "JunctionX Algiers",
+                    "name": "JunctionX Algiers - 1st place",
                     "institution": "JunctionX Algiers",
                     "date": "",
                     "address": "Algiers, Algeria",
@@ -629,13 +630,32 @@
         }
     },
     "Contact": {
-        "title": "Contact me",
-        "description": "Here you'll find different ways to get in touch with me, either through social media or sending me a direct email 😁",
-        "socials": {
-            "linkedin": "/in/anis-rouane-124948142",
-            "email": "anis.rouane98@gmail.com",
-            "whatsapp": "+213 541047274"
-        },
-        "or": "OR"
+        "title": "Let's talk! 😁",
+        "description": "Let's talk! 😁",
+        "socials": [
+            {
+                "name": "Linkedin",
+                "icon": "linkedin",
+                "value": "/in/anis-rouane-124948142",
+                "url": "https://linkedin.com/in/anis-rouane-124948142"
+            },
+            {
+                "name": "Email",
+                "icon": "envelope",
+                "value": "anis.rouane98@gmail.com",
+                "url": "mailto:anis.rouane98@gmail.com"
+            },
+            {
+                "name": "WhatsApp",
+                "icon": "whatsapp",
+                "value": "+213 541047274",
+                "url": "https://web.whatsapp.com/send/?phone=+213541047274"
+            },
+            {
+                "name": "Phone",
+                "icon": "phone",
+                "value": "+33 753041390"
+            }
+        ]
     }
 }

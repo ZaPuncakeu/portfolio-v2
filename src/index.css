@@ -53,10 +53,15 @@
 
     
     --dark-contact-icons-colors: #ddeaff;
+    --dark-contact-background-color-lighter: #061336;
+    --dark-contact-icon-container-background-color-hover: #2a417f;
+    --dark-close-btn-bg-color: #DFE2E5;
+    --dark-close-btn-color: #061336;
+    --dark-close-btn-bg-color-hover: #cccdce;
 
     /* Light mode */
     --light-navbar-primary-color: #212121;
-    --light-main-background-color:rgb(222, 222, 222);
+    --light-main-background-color:rgb(65, 61, 61);
     --light-main-background-color-lighter: #051a3a;
 }
 

@@ -9,6 +9,20 @@
     box-sizing: border-box;
     position: fixed;
     z-index: 106;
+    
+    .flag-icon {
+        width: 30px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .selected-lang {
+        border-bottom: solid var(--dark-resume-selection-button-border-color) 3px;
+    }
+
     .nav-container {
         display: flex;
         gap: 35px;
