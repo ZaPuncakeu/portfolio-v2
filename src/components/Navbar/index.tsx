@@ -8,6 +8,7 @@ import { changeTheme } from '../../slices/themeSlice';
 import { useEffect, useState } from 'react';
 import { changeLanguage } from '../../slices/languageSlice';
 import Contact from '../Contact';
+import { motion } from 'framer-motion';
 
 export default function Navbar(){
     const { text } = useLanguage();
@@ -31,7 +32,7 @@ export default function Navbar(){
                 width > 860 ?
                     <DesktopNavbar text={text} theme={theme} ids={ids} language={lang} setContactOpened={setContactOpened}/>
                 :
-                    <MobileNavbar text={text} theme={theme} ids={ids} setContactOpened={setContactOpened}/>
+                    <MobileNavbar text={text} theme={theme} ids={ids} language={lang} setContactOpened={setContactOpened}/>
             }
 
             {
@@ -48,7 +49,7 @@ function DesktopNavbar({ text, theme, ids, language, setContactOpened }:any) {
     
     const dispatch = useDispatch();
     return (
-        <nav id={`navbar-desktop`} className={`navbar-dark-mode`}>
+        <nav id={`navbar-desktop`} className={`navbar-${theme}-mode`}>
             <div className='logo-nav'>
                 {/*<div style={{
                     width: 80,
@@ -99,25 +100,63 @@ function DesktopNavbar({ text, theme, ids, language, setContactOpened }:any) {
 }
 
 function MobileNavbar({ text, theme, ids, language, setContactOpened }:any) {
-    
+    const [sideOptionOpened, setSideOpetionOpened] = useState(false);
+    const dispatch = useDispatch();
+    console.log(language)
     return (
-        <nav id={`navbar-mobile`} className={`navbar-dark-mode`}>
-            <div className='nav-container'>
-                {
-                    text.Navbar['nav-items'].map((nav:any, index:number) => {
-                        return(
-                            <button 
-                                key={`nav-item-${index}`} 
-                                onClick={e => nav.icon.includes('envelope') ? setContactOpened(true) : document.querySelector(`#${ids[index]}`).scrollIntoView({ behavior: 'smooth' })}
-                            >
-                                <i className={nav.icon}></i>
-                                <br />
-                                {nav.text}
-                            </button>
-                        )
-                    })
-                }
-            </div>
-        </nav>
+        <>
+            <nav id={`navbar-mobile`} className={`navbar-${theme}-mode`}>
+                <div className='nav-container'>
+                    {
+                        text.Navbar['nav-items'].map((nav:any, index:number) => {
+                            return(
+                                <button 
+                                    key={`nav-item-${index}`} 
+                                    onClick={e => nav.icon.includes('envelope') ? setContactOpened(true) : document.querySelector(`#${ids[index]}`).scrollIntoView({ behavior: 'smooth' })}
+                                >
+                                    <i className={nav.icon}></i>
+                                    <br />
+                                    <span style={{
+                                        fontSize: language === 'fr' ? '0.6rem' : '0.9rem'
+                                    }}>{nav.text}</span>
+                                </button>
+                            )
+                        })
+                    }
+                </div>
+            </nav>
+
+            <motion.div 
+                className={`mobile-nav-side-options mobile-nav-side-options-${theme}`}
+                initial={{
+                    x: !sideOptionOpened ? 0 : '70px',
+                    y: '-50%'
+                }}
+
+                animate={{
+                    x: !sideOptionOpened ? '70px' : 0
+                }}
+            >
+                <div className='side-container'>
+                    <button onClick={e => dispatch(changeTheme(theme === 'light' ? 'dark' : 'light'))} className={`fa ${theme === 'light' ? 'fa-sun-o' : 'fa-moon-o'} theme-button`}></button>
+                    <hr />
+                    <div
+                        onClick={e => dispatch(changeLanguage('en'))} 
+                        className={`lang ${language === 'en' ? 'selected-lang' : ''}`}
+                    >
+                        <img src="/images/icons/en.png" alt="" className={`flag-icon`}/>
+                    </div>
+                    <div
+                        onClick={e => dispatch(changeLanguage('fr'))}  
+                        className={`lang ${language === 'fr' ? 'selected-lang' : ''}`}
+                    >
+                        <img src="/images/icons/fr.png" alt="" className={`flag-icon`}/>
+                    </div>
+                </div>
+                
+                <button className='settings-btn fa fa-gear' onClick={() => setSideOpetionOpened(!sideOptionOpened)}>
+                </button>
+            </motion.div>
+        </>
     )
 }
