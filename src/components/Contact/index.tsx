@@ -1,101 +1,57 @@
-import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../../hooks/useLanguage';
+import ContactCard from './ContactCard';
 import './style.scss';
 import { motion } from 'framer-motion';
-import { Icon } from '@iconify/react';
-import { useScroll } from '../../hooks/useScroll';
 
-export default function Contact() {
+export default function Contact({onClose}) {
     const { text } = useLanguage();
-    const [selectedCategory, setSelectedCategory] = useState('all');
-    const { scrollY } = useScroll();
-
-    const [displayed, setDisplayed] = useState(false);
-
-    const ref = useRef(null);
-
-    useEffect(() => {
-        if(!displayed) {
-            if (ref.current) {
-                const { top } = ref.current.getBoundingClientRect();
-                setDisplayed(scrollY >= (top - 150));
-            }
-        }
-    }, [scrollY]);
-    
     return (
-        !displayed ?
-        <div
-            id="contact" 
-            style={{height: '100vh'}}
-            ref={ref}
-        >
-        </div>
-        :
         <motion.div 
             id="contact" 
-            className='section-page'
 
             initial={{
                 opacity: 0,
-                y: 40
             }}
 
             animate={{
-                opacity: 1,
-                y: 0
-            }}
-
-            transition={{
-                duration: 1
+                opacity: 1
             }}
         >
-            <h1><i className='fa fa-envelope'></i>&nbsp;{text.Contact.title}</h1>
-            <br />
-            <p>
-                {text.Contact.description}
-            </p>
-            {/*
-            <div className='contacts-container'>
-                <div className='socials-container'>
-                    <a 
-                        href={`mailto:${text.Contact.socials.email}`}
-                        target='_blank'
-                    >
-                        <i className='fa fa-envelope'></i>
-                        <br /><br />
-                        {text.Contact.socials.email}
-                    </a>
-            
-                    <a
-                        href={`https://Wa.me/${text.Contact.socials.whatsapp}`} 
-                        target='_blank'
-                    >
-                        <i className='fa fa-whatsapp'></i>
-                        <br /><br />
-                        {text.Contact.socials.whatsapp}
-                    </a>
+            <motion.div 
+                className='contact-container'
+                initial={{
+                    y: 25
+                }}
 
-                    <a 
-                        href={`https://www.linkedin.com${text.Contact.socials.linkedin}`} 
-                        target='_blank'
-                    >
-                        <i className='fa fa-linkedin'></i>
-                        <br /><br />
-                        {text.Contact.socials.linkedin}
-                    </a>
-                </div>
-                <div className='or-section'>
-                    <div className='line'></div>
-                    OR
-                    <div className='line'></div>
-                </div>
+                animate={{
+                    y: 0
+                }}
+
+                transition={{
+                    bounce: false,
+                    duration: 0.5
+                }}
+            >
+                <h2>{text.Contact.title}</h2>
+                {
+                    text.Contact.socials.map((social, index) => {
+                        return(
+                            <ContactCard
+                                icon={social.icon}
+                                key={JSON.stringify(social)+ "-" + index}
+                                name={social.name}
+                                value={social.value}
+                                url={social.url}
+                            />
+                        )
+                    })
+                }
+
+                <button className='close-btn' onClick={onClose}>
+                    {text.Global.close}
+                </button>
                 
-                <form>
-                    <input type="text" />
-                </form>
-            </div>
-        */}
+            </motion.div>
         </motion.div>
     )
 }

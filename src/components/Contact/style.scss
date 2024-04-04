@@ -1,67 +1,48 @@
 #contact {
-    width: 100%;
-    margin-top: 150px;
-    padding-top: 70px;
-    margin-bottom: 150px;
-
-    &>h1 {
-        text-transform: uppercase;
-        font-family: var(--font-roboto);
-        font-size: clamp(2rem, 3vw, 4rem);
-    }
-
-    @media (max-width: 860px) {
-        width: 90%;
-        margin: 150px auto;
-    }
-
-    &>p {
-        font-family: var(--font-roboto);
-        font-size: clamp(1rem, 1.5vw, 2.5rem);
-    }
-
-    .contacts-container 
-    {
-        padding: 55px 15px;
-        text-align: center;
-        color: var(--dark-contact-icons-colors);
-        width: 100%;
-        background-color: var(--dark-skills-container-background-color);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 150;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    
+    .contact-container {
+        width: 500px;
+        height: 500px;
+        background-color: var(--dark-contact-background-color-lighter);
         border-radius: 10px;
-        
-        
-        .socials-container {
-            margin-top: 35px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            gap: 55px;
-            font-family: var(--font-roboto);
-            &>a {
-                font-size: 1.1rem;
-                &>i {
-                    font-size: 3rem;
-                }
-                color: var(--dark-contact-icons-colors);
-            }
+        padding: 25px;
+        box-sizing: border-box;
+        font-family: var(--font-roboto);
+        @media (max-width: 860px) {
+            width: 90%;
         }
 
-        .or-section {
-            margin-top: 100px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-family: var(--font-roboto);
-            .line {
-                width: 45%;
-                height: 2px;
-                background-color: white;
-            }
+        h2 {
+            color: var(--dark-home-h2-color);
         }
 
-        form {
+        .close-btn {
             width: 100%;
-
+            height: 40px;
+            font-size: 1rem;
+            margin-top: 45px;
+            border-radius: 10px;
+            background-color: var(--dark-close-btn-bg-color);
+            color: var(--dark-close-btn-color);
+            border: none;
+            transition: background-color 0.2s ease;
+            font-family: var(--font-roboto);
+            font-weight: bold;
+            &:hover {
+                cursor: pointer;
+                background-color: var(--dark-close-btn-bg-color-hover);
+            }
         }
     }
 }

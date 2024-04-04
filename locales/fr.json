@@ -1,10 +1,11 @@
 {
     "Global": {
-        "resume": "Curriculum Vitae",
+        "resume": "Mon CV",
         "check-repo": "Github",
         "check-website": "Démo en ligne",
         "fr": "Français",
-        "en": "Anglais"
+        "en": "English",
+        "close": "Fermer"
     },
     "Navbar": {
         "nav-items": [
@@ -33,26 +34,26 @@
     "Home": {
         "greet": "Salut tout le monde !",
         "me": "Je suis Anis",
-        "description": "Un ingénieur logiciel qui aime coder avec une tasse de ☕ et partager sa passion avec les gens autour.",
+        "description": "Un ingénieur en logiciel qui aime coder avec une tasse de ☕ et partager sa passion avec les gens autour de lui.",
         "welcome": "Bienvenue sur mon site personnel où vous en apprendrez plus sur qui je suis, ce que je fais et comment me contacter !"
     },
     "Resume": {
-        "title": "Mon CV",
+        "title": "Curriculum Vitae",
         "work_experience": {
-            "title": "Expérience professionnelle",
+            "title": "Expérience Pro",
             "work": [
                 {
                     "year": 2023,
                     "name": "Apprenti en Recherche et Innovation",
                     "institution": "DARVA",
-                    "date": "De sept. 2023 à aujourd'hui",
+                    "date": "De sept. 2023 à sept. 2024",
                     "address": "Niort, France",
                     "website": "https://www.darva.com/",
-                    "description": "Pendant ma dernière année d'université, j'ai été pris comme apprenti dans le Laboratoire de la société d'édition de logiciels d'assurance appelée DARVA où j'ai travaillé en tant que chercheur.\n\nMa principale mission était :",
+                    "description": "Pendant mon stage en alternance, j'ai travaillé sur un projet interne visant à cartographier automatiquement le système d'information de l'entreprise à l'aide d'une CMDB (Base de Données de Gestion de Configuration).\nLe cœur de l'application a été développé en utilisant Java Quarkus. J'ai principalement travaillé sur :",
                     "bullets": [
-                        "Être à jour avec les dernières technologies et leur utilisation potentielle dans le contexte des logiciels d'assurance.",
-                        "Création d'une base de données de gestion de configuration pour cartographier automatiquement le système d'information interne.",
-                        "Animation d'ateliers et de conférences sur l'innovation."
+                        "La découverte automatique des serveurs (VM et physiques).",
+                        "La découverte automatique des applications déployées et de leurs dépendances applicatives.",
+                        "La découverte des relations entre les différents éléments."
                     ]
                 },
                 {
@@ -64,10 +65,11 @@
                     "website": "https://www.macc.fr/",
                     "description": "Dans le cadre du module de génie logiciel, nous avons travaillé avec le groupe MACC pour développer un module de gestion des redevances.\n\nJ'étais responsable de :",
                     "bullets": [
-                        "Élaboration d'un document de spécifications, de scénarios utilisateur et de tests d'acceptation.",
-                        "Création de différents diagrammes UML (de classes - de séquence).",
-                        "Implémentation de nouveaux modules en utilisant React.ts en front-end et Spring Boot en back-end.",
-                        "Développement de tests unitaires et d'intégration."
+                        "Élaboration d'un document de spécifications, de user stories et de tests de recettes.",
+                        "Création de différents diagrammes UML (Classe - Séquence).",
+                        "Mise en œuvre de nouveaux modules en utilisant React.ts en front-end et Spring Boot en back-end.",
+                        "Développement de tests unitaires et d'intégration.",
+                        "J'ai également porté la casquette de SCRUM master durant le projet."
                     ]
                 },
                 {
@@ -82,25 +84,25 @@
                         "Raisonnement algorithmique.",
                         "Fondamentaux du web (HTTP/HTML/CSS).",
                         "Fondamentaux de JS (ES6).",
-                        "Cadres JS (React.js, Next.js).",
+                        "Frameworks JS (React.js, Next.js).",
                         "Principes de base des réseaux (protocoles, IP, modèle OSI, ..., etc).",
                         "Développement back-end (Node.js, Express, architecture REST).",
                         "Bases de données SQL (MySQL) et bases de données NoSQL (MongoDB, Firebase).",
-                        "Principes de base de la sécurité (cryptage, hachage, triangle de confiance, ..., etc)."
+                        "Principes de base de la sécurité (cryptographie, hachage, triangle de confiance, ..., etc)."
                     ]
                 },
                 {
                     "year": 2021,
-                    "name": "Ingénieur front end",
+                    "name": "Ingénieur Front-End",
                     "institution": "Educe-it",
                     "date": "De mai 2021 à juil. 2022",
                     "address": "Hussein Dey, Alger",
                     "website": "https://educe-it.com",
                     "description": "Educe It est une entreprise de communication multi-services.\n\nMes responsabilités comprenaient :",
                     "bullets": [
-                        "Rencontrer des clients potentiels et créer les spécifications pour des sites Web nouveaux ou existants.",
-                        "Développer une solution sous forme de site Web intuitif, rapide et réactif en utilisant les dernières technologies (React/Next, Node.js, Laravel).",
-                        "Assurer la maintenance des solutions (y compris les tests) et préparer la documentation/les manuels utilisateur."
+                        "Rencontrer des clients potentiels et créer les spécifications pour des sites web nouveaux ou existants.",
+                        "Développer une solution sous forme de site web intuitif, rapide et réactif en utilisant les dernières technologies (React/Next, Node.js, Laravel).",
+                        "Assurer la maintenance des solutions (y compris les tests) et préparer la documentation/les manuels d'utilisation."
                     ]
                 }
             ]
@@ -112,10 +114,10 @@
                     "year": 2022,
                     "name": "Master en Logiciel et Big Data",
                     "institution": "Université de Poitiers",
-                    "date": "Depuis sept. 2022",
+                    "date": "Depuis septembre 2022",
                     "address": "Chasseneuil-du-Poitou, France",
                     "website": "https://www.univ-poitiers.fr",
-                    "description": "Actuellement inscrit en dernière année pour mon deuxième master à l'Université de Poitiers en France.\nMajor de promotion pour la 1ère année.\n\nPrincipales choses que j'apprends :",
+                    "description": "Actuellement inscrit en dernière année de mon deuxième master à l'Université de Poitiers en France.\nMajor de promotion en première année.\n\nPrincipales choses que j'apprends :",
                     "bullets": [
                         "Analyse de données",
                         "Introduction au Big Data",
@@ -127,12 +129,12 @@
                 },
                 {
                     "year": 2021,
-                    "name": "Master en Ingénierie Logicielle et Traitement de l'Information",
-                    "institution": "Université M'hamed Bougara Boumerdes",
+                    "name": "Master en Génie Logiciel et Traitement de l'Information",
+                    "institution": "Université M'hamed Bougara de Boumerdes",
                     "date": "De janv. 2021 à juil. 2022",
                     "address": "Boumerdès, Algérie",
                     "website": "https://en.univ-boumerdes.dz",
-                    "description": "Mémoire de master : IoT, conception et mise en œuvre d'une voiture autonome utilisant l'apprentissage par renforcement.\nObtenu avec une note de 16,5/20.\n\nImplémenté avec :",
+                    "description": "Mémoire de master : IoT, conception et réalisation d'une voiture autonome utilisant l'apprentissage par renforcement profond.\nObtenu avec une note de 16,5/20.\n\nImplémenté avec :",
                     "bullets": [
                         "Raspberry Pi 3 B (pour l'implémentation physique)",
                         "Environnement Gym + Unity / ML Agents (pour la simulation)",
@@ -144,11 +146,11 @@
                 {
                     "year": 2016,
                     "name": "Licence en Systèmes Informatiques.",
-                    "institution": "Université M'hamed Bougara Boumerdes",
+                    "institution": "Université M'hamed Bougara de Boumerdes",
                     "date": "De sept. 2016 à déc. 2020",
                     "address": "Boumerdès, Algérie",
                     "website": "https://en.univ-boumerdes.dz",
-                    "description": "Projet de fin d'études : IoT, conception et mise en œuvre d'une nounou intelligente.\nObtenu avec une note de 17,5/20 et félicitations du jury.\n\nImplémenté avec :",
+                    "description": "Projet de fin d'études : IoT, conception et réalisation d'une nounou intelligente.\nObtenu avec une note de 17,5/20 et félicitations du jury.\n\nImplémenté avec :",
                     "bullets": [
                         "Raspberry Pi 3 B - Arduino UNO",
                         "Node.js - Flask.",
@@ -164,83 +166,101 @@
             "hacks": [
                 {
                     "year": 2022,
-                    "name": "Master en Logiciel et Big Data",
-                    "institution": "Université de Poitiers",
-                    "date": "Depuis sept. 2022",
-                    "address": "Chasseneuil-du-Poitou, France",
-                    "website": "https://www.univ-poitiers.fr",
-                    "description": "Actuellement inscrit en dernière année pour mon deuxième master à l'Université de Poitiers en France.\nMajor de promotion pour la 1ère année.\n\nPrincipales choses que j'apprends :",
+                    "name": "Junction Finland - Non classé",
+                    "institution": "Junction Finland",
+                    "date": "",
+                    "address": "Espoo - Finlande",
+                    "website": "https://www.hackjunction.com",
+                    "description": "Après 48 heures de codage intensif, nous avons réussi à créer un MVP sous forme d'un site web qui aide les créateurs de contenu à générer des bandes-annonces, des tags et des légendes pour améliorer leur productivité.\n\nLa stack utilisée :",
                     "bullets": [
-                        "Analyse de données",
-                        "Introduction au Big Data",
-                        "Business Intelligence",
-                        "Apprentissage automatique",
-                        "C++ avancé",
-                        "Génie logiciel"
+                        "Quarkus (pour le service d'authentification et de génération de légendes).",
+                        "Flask (pour le service de génération de bandes-annonces).",
+                        "ReactJs (pour l'interface utilisateur).",
+                        "Postgresql (pour le stockage des données)."
+                    ]
+                },
+                {
+                    "year": 2022,
+                    "name": "Hack-it - 3ème place",
+                    "institution": "Hack-it",
+                    "date": "",
+                    "address": "Alger, Algérie",
+                    "website": "https://cse.club/fr",
+                    "description": "Après 48 heures de codage intensif, nous avons réussi à créer un MVP sous forme d'une application mobile qui surveille les paramètres physiologiques des nouveau-nés afin de prévenir le syndrome de mort subite du nourrisson. L'application exploite l'API Terra pour utiliser n'importe quelle montre connectée pour la surveillance.\n\nLa stack utilisée :",
+                    "bullets": [
+                        "Node.js (pour le service d'authentification).",
+                        "Flask (pour le service de détection à l'aide d'un réseau de neurone).",
+                        "React Native (pour l'application mobile).",
+                        "Socket.io (pour le service en temps réel).",
+                        "Terra API (pour la récupération des paramètres physiologiques).",
+                        "Firebase (pour le stockage des données)."
                     ]
                 },
                 {
                     "year": 2021,
-                    "name": "Master en Ingénierie Logicielle et Traitement de l'Information",
-                    "institution": "Université M'hamed Bougara Boumerdes",
-                    "date": "De janv. 2021 à juil. 2022",
-                    "address": "Boumerdès, Algérie",
-                    "website": "https://en.univ-boumerdes.dz",
-                    "description": "Mémoire de master : IoT, conception et mise en œuvre d'une voiture autonome utilisant l'apprentissage par renforcement.\nObtenu avec une note de 16,5/20.\n\nImplémenté avec :",
+                    "name": "JunctionX Alger - 1ère place",
+                    "institution": "JunctionX Alger",
+                    "date": "",
+                    "address": "Alger, Algérie",
+                    "website": "https://www.elmoudjahid.dz/fr/societe/rouane-anis-fondateur-de-binary-fold-premier-prix-du-concours-international-junction-nous-developpons-des-applications-pour-les-commercants-179032",
+                    "description": "JunctionX est l'un des plus grands hackathons au monde. Chaque année, il réunit des développeurs, des designers et des entrepreneurs pour créer des projets excitants et relever des défis intrigants en 48 heures. Mon équipe, 'Binary Fold', a remporté la première place avec une application mobile qui facilite la communication entre les détaillants et les distributeurs de la boisson 'Hamoud'. En conséquence, nous avons remporté la chance de représenter l'Algérie lors du hackathon en Finlande.\n\nLa pile technologique utilisée :",
                     "bullets": [
-                        "Raspberry Pi 3 B (pour l'implémentation physique)",
-                        "Environnement Gym + Unity / ML Agents (pour la simulation)",
-                        "Node.js - Flask.",
-                        "Socket.io",
-                        "React.js."
+                        "Unity (pour le mini-jeu de lancer de bouteilles).",
+                        "React Native.",
+                        "Node.js.",
+                        "Firebase."
                     ]
                 },
                 {
-                    "year": 2016,
-                    "name": "Licence en Systèmes Informatiques.",
-                    "institution": "Université M'hamed Bougara Boumerdes",
-                    "date": "De sept. 2016 à déc. 2020",
-                    "address": "Boumerdès, Algérie",
-                    "website": "https://en.univ-boumerdes.dz",
-                    "description": "Projet de fin d'études : IoT, conception et mise en œuvre d'une nounou intelligente.\nObtenu avec une note de 17,5/20 et félicitations du jury.\n\nImplémenté avec :",
-                    "bullets": [
-                        "Raspberry Pi 3 B - Arduino UNO",
-                        "Node.js - Flask.",
-                        "Socket.io - WebRTC.",
-                        "React.js.",
-                        "Firebase."
-                    ]
+                    "year": 2019,
+                    "name": "Algeria Game Challenge 2019 - 1ère place",
+                    "institution": "Algeria Game Challenge 2019",
+                    "date": "",
+                    "address": "Alger, Algérie",
+                    "website": "https://www.facebook.com/photo/?fbid=2385337871587447&set=a.2385336738254227",
+                    "description": "Algeria Game Challenge (AGC) est une compétition nationale où de nombreux développeurs de jeux se rencontrent et présentent leurs jeux devant un public et des juges. Nous avons remporté le premier prix pour notre jeu Identity, qui retrace l'histoire de la guerre d'Algérie à travers des énigmes et des puzzles. Le jeu a été développé avec Unity 2D/C#.",
+                    "bullets": []
+                },
+                {
+                    "year": 2019,
+                    "name": "ZeGaming Dev Camp 3 - 1ère place",
+                    "institution": "ZeGaming Dev Camp 3",
+                    "date": "",
+                    "address": "Alger, Algérie",
+                    "website": "https://www.facebook.com/photo/?fbid=2278753125496770&set=a.1157529754285785",
+                    "description": "Un devcamp de 3 jours où nous avons appris les concepts fondamentaux de la création de jeux vidéo et le moteur GameMaker Studio. À la fin, nous avons présenté nos créations et remporté le premier prix, ainsi que la qualification pour la compétition nationale : Algeria Game Challenge.",
+                    "bullets": []
                 }
             ]
         }
     },
     "Skills": {
-        "title": "Compétences",
-        "description": "Au cours de ma carrière, j'ai utilisé plusieurs technologies à des fins diverses. Mais en tant qu'ingénieur logiciel, je ne suis pas lié par une technologie spécifique car je peux m'adapter rapidement en fonction des besoins.",
-        "glimpse": "Jetez un coup d'œil à ce que je sais :",
+        "title": "Skills",
+        "description": "During my career, I have used several techs for diverse purposes. But as a software engineer, I am not bound by any technology as I can adapt quickly depending on the need.",
+        "glimpse": "Have a glimps of what I know:",
         "categories": [
             {
-                "name": "Tout",
+                "name": "All",
                 "key": "all"
             },
             {
-                "name": "Développement front end",
+                "name": "Front end development",
                 "key": "front"
             },
             {
-                "name": "Développement back end",
+                "name": "Back end development",
                 "key": "back"
             },
             {
-                "name": "Développement mobile",
+                "name": "Mobile development",
                 "key": "mobile"
             },
             {
-                "name": "Bases de données",
+                "name": "Databases",
                 "key": "databases"
             },
             {
-                "name": "Intelligence artificielle",
+                "name": "Artificial Intelligence",
                 "key": "ai"
             },
             {
@@ -248,7 +268,7 @@
                 "key": "infra"
             },
             {
-                "name": "Autres",
+                "name": "Other",
                 "key": "other"
             }
         ],
@@ -501,32 +521,32 @@
     },
     "Portfolio": {
         "title": "Portfolio",
-        "description": "Check out some of the work I produced!",
+        "description": "Découvrez certains des travaux que j'ai réalisés !",
         "categories": [
             {
-                "name": "Websites",
+                "name": "Sites web",
                 "key": "websites"
             },
             {
-                "name": "Mobile apps",
+                "name": "Applications mobiles",
                 "key": "mobile-apps"
             },
             {
-                "name": "Other creations",
+                "name": "Autres créations",
                 "key": "other"
             },
             {
-                "name": "Workshops",
+                "name": "Ateliers",
                 "key": "workshops"
             }
         ],
         "works": {
             "websites": [
                 {
-                    "title": "Von Edits Portfolio",
-                    "description": "The portfolio features a series of game edits highlighting the video editor's specialization in gaming content. Each edit showcases their skill in blending gameplay footage with effects and sound design to create engaging content for gaming audiences.",
+                    "title": "Portfolio de Von Edits",
+                    "description": "Le portfolio présente une série d'éditions de jeux mettant en valeur la spécialisation de l'éditeur vidéo dans le contenu de jeu. Chaque édition montre sa compétence à mélanger des séquences de jeu avec des effets et une conception sonore pour créer un contenu engageant pour les audiences de jeu.",
                     "tools": {
-                        "title": "Built with:",
+                        "title": "Construit avec :",
                         "tools": [
                             "ReactJs",
                             "Firebase",
@@ -539,9 +559,9 @@
                 },
                 {
                     "title": "Resumeo",
-                    "description": "An open source Resume generator, where you can create a simple nice looking resume and print it. The website is available in French and English. People can fork the code and create their own models using React",
+                    "description": "Un générateur de CV open source, où vous pouvez créer un CV simple et agréable et l'imprimer. Le site Web est disponible en français et en anglais. Les gens peuvent fork le code et créer leurs propres modèles en utilisant React",
                     "tools": {
-                        "title": "Built with:",
+                        "title": "Construit avec :",
                         "tools": [
                             "ReactJs",
                             "Redux",
@@ -554,9 +574,9 @@
                 },
                 {
                     "title": "Dareadventure",
-                    "description": "An omegle-like website that connects complete strangers in real time to speak through video chat and text-messages",
+                    "description": "Un site Web similaire à Omegle qui connecte des étrangers complets en temps réel pour parler via un chat vidéo et des messages texte",
                     "tools": {
-                        "title": "Built with:",
+                        "title": "Construit avec :",
                         "tools": [
                             "ReactJs",
                             "TypeScript",
@@ -571,10 +591,10 @@
                     "website": "https://dareadventure.netlify.app"
                 },
                 {
-                    "title": "The Zoo",
-                    "description": "A Zoo management website that offers information cards about the animals within and an interactive map. An admin management has also been implemented in order to add, edit or delete said animals. This website was made as a university project at the university of Poitiers",
+                    "title": "Le Zoo",
+                    "description": "Un site Web de gestion de zoo qui propose des cartes d'information sur les animaux à l'intérieur et une carte interactive. Une gestion administrative a également été implémentée pour ajouter, éditer ou supprimer lesdits animaux. Ce site Web a été réalisé dans le cadre d'un projet universitaire à l'université de Poitiers.",
                     "tools": {
-                        "title": "Built with:",
+                        "title": "Construit avec :",
                         "tools": [
                             "ReactJs",
                             "Postgresql",
@@ -589,9 +609,9 @@
                 },
                 {
                     "title": "JSPCC",
-                    "description": "A French pseudo code compiler entierly written in JavaScript. I used the recursive descendant parser technique (top-down parser). The memory and stack management were written manually as well.",
+                    "description": "Un compilateur de pseudo-code français entièrement écrit en JavaScript. J'ai utilisé la technique du parseur descendant récursif (parseur top-down). La gestion de la mémoire et de la pile a également été écrite manuellement.",
                     "tools": {
-                        "title": "Built with:",
+                        "title": "Construit avec :",
                         "tools": [
                             "JavaScript",
                             "jQuery"
@@ -602,10 +622,10 @@
                     "website": "https://zapuncakeu.github.io/JSPCC"
                 },
                 {
-                    "title": "My portfolio",
-                    "description": "The portfolio presents a comprehensive overview of my professional journey, featuring my career highlights, resume, and skill set.",
+                    "title": "Mon portfolio",
+                    "description": "Le portfolio présente un aperçu complet de mon parcours professionnel, mettant en avant mes points forts professionnels, mon CV et mes compétences.",
                     "tools": {
-                        "title": "Built with:",
+                        "title": "Construit avec :",
                         "tools": [
                             "ReactJs",
                             "TypeScript",
@@ -620,9 +640,9 @@
             "mobileApps": [
                 {
                     "title": "Mahd",
-                    "description": "Mahd was a mobile app that was created during a hackathon where we spent 48 hours of non-stop coding. The app tracks the physiological parameters of newborns in order to prevent sudden infant death syndrome. The application uses the Terra API to enable any wearable watch to be used for monitoring.",
+                    "description": "Mahd était une application mobile créée lors d'un hackathon où nous avons passé 48 heures de codage intensif. L'application suit les paramètres physiologiques des nouveau-nés afin de prévenir le syndrome de mort subite du nourrisson. L'application utilise l'API Terra pour permettre à n'importe quelle montre connectée d'être utilisée pour la surveillance.",
                     "tools": {
-                        "title": "Built with:",
+                        "title": "Construit avec :",
                         "tools": [
                             "Nodejs",
                             "React Native",
@@ -635,30 +655,40 @@
                     "github": "https://github.com/ZaPuncakeu/mahdapp-hackit",
                     "website": ""
                 }
-            ],
-            "other": [],
-            "workshops": [],
-            "courses": [],
-            "papers": []
-        }
+            ]
+        },
+        "other": [],
+        "workshops": [],
+        "courses": [],
+        "papers": []
     },
     "Contact": {
-        "title": "Contact",
-        "description": "N'hésitez pas à me contacter pour toute question, opportunité de collaboration ou simplement pour dire bonjour !",
-        "form": {
-            "name": "Nom complet",
-            "email": "Adresse e-mail",
-            "message": "Votre message",
-            "button": "Envoyer le message"
-        },
-        "info": {
-            "title": "Informations de contact",
-            "address": "Adresse : Rue de la Liberté, Niort, France",
-            "phone": "Téléphone : +33 6 12 34 56 78",
-            "email": "Email : anis@exemple.com"
-        }
-    },
-    "Footer": {
-        "rights_reserved": "Tous droits réservés"
+        "title": "Parlons nous ! 😁",
+        "description": "Let's talk! 😁",
+        "socials": [
+            {
+                "name": "Linkedin",
+                "icon": "linkedin",
+                "value": "/in/anis-rouane-124948142",
+                "url": "https://linkedin.com/in/anis-rouane-124948142"
+            },
+            {
+                "name": "Email",
+                "icon": "envelope",
+                "value": "anis.rouane98@gmail.com",
+                "url": "mailto:anis.rouane98@gmail.com"
+            },
+            {
+                "name": "WhatsApp",
+                "icon": "whatsapp",
+                "value": "+213 541047274",
+                "url": "https://web.whatsapp.com/send/?phone=+213541047274"
+            },
+            {
+                "name": "Phone",
+                "icon": "phone",
+                "value": "+33 753041390"
+            }
+        ]
     }
 }
