@@ -235,32 +235,32 @@
         }
     },
     "Skills": {
-        "title": "Skills",
-        "description": "During my career, I have used several techs for diverse purposes. But as a software engineer, I am not bound by any technology as I can adapt quickly depending on the need.",
-        "glimpse": "Have a glimps of what I know:",
+        "title": "Compétences",
+        "description": "Au cours de ma carrière, j'ai utilisé plusieurs technologies à des fins diverses. En tant qu'ingénieur logiciel, je ne suis pas limité par une seule technologie car je peux m'adapter rapidement en fonction des besoins.",
+        "glimpse": "Jetez un coup d'œil à ce que je sais faire :",
         "categories": [
             {
-                "name": "All",
+                "name": "Tous",
                 "key": "all"
             },
             {
-                "name": "Front end development",
+                "name": "Développement front-end",
                 "key": "front"
             },
             {
-                "name": "Back end development",
+                "name": "Développement back-end",
                 "key": "back"
             },
             {
-                "name": "Mobile development",
+                "name": "Développement mobile",
                 "key": "mobile"
             },
             {
-                "name": "Databases",
+                "name": "Bases de données",
                 "key": "databases"
             },
             {
-                "name": "Artificial Intelligence",
+                "name": "Intelligence artificielle",
                 "key": "ai"
             },
             {
@@ -268,7 +268,7 @@
                 "key": "infra"
             },
             {
-                "name": "Other",
+                "name": "Autre",
                 "key": "other"
             }
         ],
