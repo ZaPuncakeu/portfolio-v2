@@ -6,7 +6,7 @@ import { useWindowSize } from '../../hooks/useWindowSize';
 import { useScroll } from '../../hooks/useScroll';
 
 interface ExperienceType {
-    year: 2022,
+    year: number,
     name: string
     date: string
     address: string

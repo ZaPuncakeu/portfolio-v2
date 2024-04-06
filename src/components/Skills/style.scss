@@ -42,6 +42,10 @@
                 cursor: pointer;
                 transition: background-color 0.2s ease;
             }
+
+            .selected-category {
+                background-color: var(--dark-skills-filter-selected-background-color);
+            }
         }
 
 
@@ -90,17 +94,6 @@
 
         &>p {
             color: var(--dark-home-p-color);
-        }
-
-        .skills-container 
-        {
-            
-            .skills-filter {
-
-                .selected-category {
-                    background-color: var(--dark-skills-filter-selected-background-color);
-                }
-            }
         }
     }
 }

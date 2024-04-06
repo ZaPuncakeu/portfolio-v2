@@ -68,3 +68,23 @@
         }
     }
 }
+
+.app-light-mode {
+    #portfolio {
+        &>h1 {
+            color: var(--light-skills-h1-color);
+        }
+
+        &>p {
+            color: var(--light-home-p-color);
+        }
+
+        .work-container 
+        {
+            background-color: var(--light-portfolio-section-container-background-color);
+            h3 {
+                color: var(--light-skills-h1-color);
+            }
+        }
+    }
+}

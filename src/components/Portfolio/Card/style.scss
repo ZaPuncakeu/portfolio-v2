@@ -86,3 +86,34 @@
         }
     }
 }
+
+.app-light-mode {
+    .project-card {
+        background-color: var(--light-portfolio-container-background-color);
+        border: solid rgb(92, 92, 92) 2px;
+        h4 {
+            color: var(--light-portfolio-h4-color);
+        }
+
+        p {
+            color: var(--light-portfolio-p-color);
+        }
+
+        span {
+            color: var(--light-portfolio-span-color);
+
+            b {
+                color: var(--light-portfolio-span-b-color);
+            }
+        }
+
+        .git-btn {
+            border: solid var(--light-portfolio-p-color) 2px;
+            color: var(--light-portfolio-p-color);
+        }
+
+        .web-btn {
+            background-color: var(--light-portfolio-website-button-background-color);
+        }
+    }
+}
