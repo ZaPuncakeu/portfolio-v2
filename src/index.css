@@ -21,6 +21,8 @@
     --dark-home-p-color: #ccd6f6;
 
 
+    --dark-border-left-exp: #ffffff;
+
     --dark-resume-h1-color: #ddeaff;
     --dark-resume-selection-button-border-color: #ff6c6c;
     --dark-resume-selection-button-color: #ffffff;
@@ -61,8 +63,56 @@
 
     /* Light mode */
     --light-navbar-primary-color: #212121;
-    --light-main-background-color:rgb(65, 61, 61);
+    --light-main-background-color:rgb(241, 241, 241);
     --light-main-background-color-lighter: #051a3a;
+
+    --light-navbar-primary-color: #292929;
+    --light-home-h2-color: #252525;
+    --light-home-h1-color: #1e1e1e;
+    --light-home-h3-color: #202020;
+    --light-home-p-color: #181818;
+    
+    
+    --light-resume-h1-color: #232323;
+    --light-resume-selection-button-border-color: #ff6c6c;
+    --light-resume-selection-button-color: #ffffff;
+    
+    --light-resume-button-border-color: #5c82ff;
+    --light-resume-button-text-color: #000000;
+    --light-resume-selected-button-text-color: #ffffff;
+    
+    --light-border-left-exp: #000000;
+
+    --light-resume-name-color: #252525;
+    --light-resume-date-color: #1c1c1c;
+    --light-resume-website-color: #00be91;
+    --light-resume-description-color: #141414;
+    --light-resume-description-color: #141414;
+    
+        
+    --light-skills-container-background-color: #050d18;
+    
+    --light-skills-h1-color: #0c0c0c;
+    --light-skills-filter-border-color: #5c82ff;
+    --light-skills-filter-color: #ddeaff;
+    --light-skills-filter-selected-background-color: #5c82ff;
+    
+        
+    --light-portfolio-container-background-color: #f3f3f3;
+    --light-portfolio-section-container-background-color: #ffffff;
+    --light-portfolio-h4-color: #484848;
+    --light-portfolio-p-color: #383838;
+    --light-portfolio-span-b-color: #009b77;
+    --light-portfolio-span-color: rgb(0, 0, 0);
+    --light-portfolio-website-button-background-color: #5c82ff;
+    
+        
+    --light-contact-icons-colors: #ddeaff;
+    --light-contact-background-color-lighter: #061336;
+    --light-contact-icon-container-background-color-hover: #2a417f;
+    --light-close-btn-bg-color: #DFE2E5;
+    --light-close-btn-color: #061336;
+    --light-close-btn-bg-color-hover: #cccdce;
 }
 
 ::-webkit-scrollbar {
@@ -102,6 +152,10 @@
 
 .app-dark-mode {
     background-color: var(--dark-main-background-color);
+}
+
+.app-light-mode {
+    background-color: var(--light-main-background-color);
 }
 
 .styled-button {

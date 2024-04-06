@@ -100,3 +100,23 @@
         }
     }
 }
+
+.app-light-mode {
+    #home {
+        h2 {
+            color: var(--light-home-h2-color);
+        }
+    
+        h1 {
+            color: var(--light-home-h1-color);
+        }
+    
+        h3 {
+            color: var(--light-home-h3-color);
+        }
+    
+        p {
+            color: var(--light-home-p-color);
+        }
+    }
+}

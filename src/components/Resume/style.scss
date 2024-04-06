@@ -172,7 +172,7 @@
             }
         }
         .experience {
-            border-left: solid white 2px;
+            border-left: solid var(--dark-border-left-exp) 2px;
             #resume-name {
                 color: var(--dark-resume-name-color);
                 text-transform: uppercase;
@@ -192,6 +192,64 @@
 
             #resume-bullets {
                 color: var(--dark-resume-description-color);
+            }
+        }
+    }
+}
+
+.app-light-mode {
+    #resume {
+        &>h1 {
+            color: var(--light-resume-h1-color);
+        }
+        
+        .selection {
+    
+            button {
+                border: solid var(--light-resume-selection-button-border-color) 2px;
+                color: var(--light-resume-selection-button-border-color);
+            }
+
+            .selected {
+                background-color: var(--light-resume-selection-button-border-color);
+                color: var(--light-resume-button-text-color);
+            }
+        }
+
+        .exp-name 
+        {
+            button {
+                border: solid var(--light-resume-button-border-color) 2px;
+                color: var(--light-resume-button-text-color);
+            }
+
+            .selected {
+                background-color: var(--light-resume-button-border-color);
+                color: var(--light-resume-selected-button-text-color);
+            }
+        }
+
+        .experience {
+            border-left: solid var(--light-border-left-exp) 2px;
+            #resume-name {
+                color: var(--light-resume-name-color);
+                text-transform: uppercase;
+            }
+
+            #resume-date {
+                color: var(--light-resume-date-color);
+            }
+
+            #resume-website {
+                color: var(--light-resume-website-color);
+            }
+
+            #resume-description {
+                color: var(--light-resume-description-color);
+            }
+
+            #resume-bullets {
+                color: var(--light-resume-description-color);
             }
         }
     }
