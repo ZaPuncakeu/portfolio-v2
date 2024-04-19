@@ -4,9 +4,11 @@ import './style.scss';
 import { motion } from 'framer-motion';
 import { Icon } from '@iconify/react';
 import { useScroll } from '../../hooks/useScroll';
+import { LanguageHookInterface } from '../../types/language';
+import { Skill, SkillsCategoriesInterface, SkillsInterface } from '../../types/locale';
 
 export default function Skills() {
-    const { text } = useLanguage();
+    const { text }:LanguageHookInterface = useLanguage();
     const [selectedCategory, setSelectedCategory] = useState('all');
     const { scrollY } = useScroll();
 
@@ -61,7 +63,7 @@ export default function Skills() {
             <div className='skills-container'>
                 <div className='skills-filter'>
                     {
-                        text.Skills.categories.map((cat:any) => {
+                        text.Skills.categories.map((cat:SkillsCategoriesInterface) => {
                             return(
                                 <button key={`skill-filter-${JSON.stringify(cat)}`} onClick={() => setSelectedCategory(cat.key)} className={`${cat.key === selectedCategory ? 'selected-category' : ''}`}>
                                     {cat.name}
@@ -75,8 +77,8 @@ export default function Skills() {
                     {
                         Object.keys(text.Skills.skills)
                         .filter((skill_key:string) => 'all' === selectedCategory || skill_key === selectedCategory)
-                        .map((cat:any, i:number) => {
-                            return (text.Skills.skills[cat].map((skill:any, index:number) => {
+                        .map((cat:string, i:number) => {
+                            return (text.Skills.skills[cat].map((skill:Skill, index:number) => {
                                return (
                                     <motion.div
                                         initial={{

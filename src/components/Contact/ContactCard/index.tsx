@@ -1,10 +1,12 @@
 import './style.scss'
+import { ContactCardPropsInterface } from './index.d';
+
 export default function ContactCard({
     icon,
     name,
     value,
     url
-}) {
+}: ContactCardPropsInterface) {
     return(
         <div className="contact-card">
             <div className='icon-value-container'>

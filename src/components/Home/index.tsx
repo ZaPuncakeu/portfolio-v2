@@ -1,9 +1,10 @@
 import { useLanguage } from '../../hooks/useLanguage';
+import { LanguageHookInterface } from '../../types/language';
 import './style.scss';
 import { motion } from 'framer-motion';
 
 export default function Home() {
-    const { text } = useLanguage();
+    const { text }:LanguageHookInterface = useLanguage();
     return (
         <div id="home" className='section-page'>
             <div>

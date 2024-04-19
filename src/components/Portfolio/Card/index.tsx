@@ -1,4 +1,5 @@
 import { useLanguage } from '../../../hooks/useLanguage';
+import { LanguageHookInterface } from '../../../types/language';
 import './style.scss'
 
 interface CardProps{
@@ -6,7 +7,7 @@ interface CardProps{
     data: any
 }
 export default function Card({ mkey, data }:CardProps) {
-    const { text } = useLanguage();
+    const { text }:LanguageHookInterface = useLanguage();
 
     return(
         <div key={mkey} className='project-card'>
