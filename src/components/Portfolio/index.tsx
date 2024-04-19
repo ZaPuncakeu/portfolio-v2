@@ -76,8 +76,8 @@ export default function Portfolio() {
             <br /><br />
             <div className='slider-container'>
                 <Slider arrows={width >= 860} {...settings}>
-                    <Websites title={text.Portfolio.categories[0].name} websites={text.Portfolio['websites']} />
-                    <MobileApps title={text.Portfolio.categories[1].name} mobileApps={text.Portfolio['websites']} />
+                    <Websites title={text.Portfolio.categories[0].name} websites={text.Portfolio.works['websites']} />
+                    <MobileApps title={text.Portfolio.categories[1].name} mobileApps={text.Portfolio.works['mobileApps']} />
                 </Slider>
                 <br /><br />
             </div>
