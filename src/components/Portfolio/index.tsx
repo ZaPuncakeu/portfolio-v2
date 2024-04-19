@@ -9,6 +9,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useWindowSize } from '../../hooks/useWindowSize';
 import { useScroll } from '../../hooks/useScroll';
+import { LanguageHookInterface } from '../../types/language';
+
+import { MobileAppsProps, WebsitesProps } from './index.d';
+import { PortfolioWorkInterface } from '../../types/locale';
 
 const settings = {
     dots: false,
@@ -19,13 +23,13 @@ const settings = {
 };
 
 export default function Portfolio() {
-    const { text } = useLanguage();
-
+    const { text }:LanguageHookInterface = useLanguage();
+    
     const { width } = useWindowSize();
 
     const { scrollY } = useScroll();
 
-    const [displayed, setDisplayed] = useState(false);
+    const [displayed, setDisplayed] = useState<boolean>(false);
 
     const ref = useRef(null);
 
@@ -72,8 +76,8 @@ export default function Portfolio() {
             <br /><br />
             <div className='slider-container'>
                 <Slider arrows={width >= 860} {...settings}>
-                    <Websites text={text} />
-                    <MobileApps text={text} />
+                    <Websites title={text.Portfolio.categories[0].name} websites={text.Portfolio['websites']} />
+                    <MobileApps title={text.Portfolio.categories[1].name} mobileApps={text.Portfolio['websites']} />
                 </Slider>
                 <br /><br />
             </div>
@@ -82,7 +86,7 @@ export default function Portfolio() {
     )
 }
 
-function Websites({ text }: any) {
+function Websites({ title, websites }: WebsitesProps) {
     return (
         <motion.div
             initial={{
@@ -99,12 +103,12 @@ function Websites({ text }: any) {
 
             className='work-container'
         >
-            <h3>{text.Portfolio.categories[0].name}</h3>
+            <h3>{title}</h3>
             <br />
             <div>
                 {
-                    text.Portfolio.works.websites
-                        .map((website: any, index: number) => {
+                    websites
+                        .map((website: PortfolioWorkInterface, index: number) => {
                             return (
                                 <Card
                                     key={`card-website-${JSON.stringify(website)}-${index}`}
@@ -119,7 +123,7 @@ function Websites({ text }: any) {
     )
 }
 
-function MobileApps({ text }: any) {
+function MobileApps({ title, mobileApps }: MobileAppsProps) {
     return (
         <motion.div
             initial={{
@@ -136,12 +140,12 @@ function MobileApps({ text }: any) {
 
             className='work-container'
         >
-            <h3>{text.Portfolio.categories[1].name}</h3>
+            <h3>{title}</h3>
             <br />
             <div>
                 {
-                    text.Portfolio.works.mobileApps
-                        .map((app: any, index: number) => {
+                    mobileApps
+                        .map((app: PortfolioWorkInterface, index: number) => {
                             return (
                                 <Card
                                     key={`card-mobile-${JSON.stringify(app)}-${index}`}

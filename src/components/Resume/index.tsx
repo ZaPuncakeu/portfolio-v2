@@ -2,24 +2,11 @@ import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../../hooks/useLanguage';
 import './style.scss';
 import { motion } from 'framer-motion';
-import { useWindowSize } from '../../hooks/useWindowSize';
 import { useScroll } from '../../hooks/useScroll';
+import { LanguageHookInterface } from '../../types/language';
 
-interface ExperienceType {
-    year: number,
-    name: string
-    date: string
-    address: string
-    website: string
-    description: string
-    institution: string
-    bullets: string[]
-}
+import { ResumeDataProps } from './index.d';
 
-interface ResumeDataProps {
-    mkey: string
-    experiences: ExperienceType[]
-}
 
 const options = [
     "work_experience",
@@ -28,13 +15,13 @@ const options = [
 ]
 
 export default function Resume() {
-    const { text } = useLanguage();
-    const [selected, setSelected] = useState('work_experience');
-    const [optionsOpened, setOptionsOpened] = useState(false);
+    const { text }:LanguageHookInterface = useLanguage();
+    const [selected, setSelected] = useState<string>('work_experience');
+    const [optionsOpened, setOptionsOpened] = useState<boolean>(false);
     
     const { scrollY } = useScroll();
 
-    const [displayed, setDisplayed] = useState(false);
+    const [displayed, setDisplayed] = useState<boolean>(false);
 
     const ref = useRef(null);
 
@@ -142,7 +129,6 @@ function ResumeData({ mkey, experiences }: ResumeDataProps) {
 
     function handleSelect(selection: number) {
         setSelectedExperience(selection);
-        //career.setCareerOpened(false);
     }
 
     return (

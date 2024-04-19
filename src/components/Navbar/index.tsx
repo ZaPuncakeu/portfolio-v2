@@ -9,14 +9,17 @@ import { useEffect, useState } from 'react';
 import { changeLanguage } from '../../slices/languageSlice';
 import Contact from '../Contact';
 import { motion } from 'framer-motion';
+import { LanguageHookInterface } from '../../types/language';
+import { NavItemInterface } from '../../types/locale';
+import { NavbarPropsInterface } from './index.d';
 
 export default function Navbar(){
-    const { text } = useLanguage();
+    const { text }:LanguageHookInterface = useLanguage();
     const { width } = useWindowSize();
     const theme:string = useSelector((state: RootState) => state.theme.theme);
     const lang:string = useSelector((state: RootState) => state.language.language);
 
-    const [ids, setIds] = useState([
+    const [ids, setIds] = useState<string[]>([
         'home',
         'resume',
         'skills',
@@ -24,7 +27,7 @@ export default function Navbar(){
         'contact'
     ]);
 
-    const [contactOpened, setContactOpened] = useState(false);
+    const [contactOpened, setContactOpened] = useState<boolean>(false);
 
     return(
         <>
@@ -45,7 +48,7 @@ export default function Navbar(){
     )
 }
 
-function DesktopNavbar({ text, theme, ids, language, setContactOpened }:any) {
+function DesktopNavbar({ text, theme, ids, language, setContactOpened }:NavbarPropsInterface) {
     
     const dispatch = useDispatch();
     return (
@@ -63,7 +66,7 @@ function DesktopNavbar({ text, theme, ids, language, setContactOpened }:any) {
 
             <div className='nav-container'>
                 {
-                    text.Navbar['nav-items'].map((nav:any, index:number) => {
+                    text.Navbar['nav-items'].map((nav:NavItemInterface, index:number) => {
                         return(
                             <button 
                                 key={`nav-item-${index}`}
@@ -99,7 +102,7 @@ function DesktopNavbar({ text, theme, ids, language, setContactOpened }:any) {
     )
 }
 
-function MobileNavbar({ text, theme, ids, language, setContactOpened }:any) {
+function MobileNavbar({ text, theme, ids, language, setContactOpened }:NavbarPropsInterface) {
     const [sideOptionOpened, setSideOpetionOpened] = useState(false);
     const dispatch = useDispatch();
     console.log(language)
@@ -108,7 +111,7 @@ function MobileNavbar({ text, theme, ids, language, setContactOpened }:any) {
             <nav id={`navbar-mobile`} className={`navbar-${theme}-mode`}>
                 <div className='nav-container'>
                     {
-                        text.Navbar['nav-items'].map((nav:any, index:number) => {
+                        text.Navbar['nav-items'].map((nav:NavItemInterface, index:number) => {
                             return(
                                 <button 
                                     key={`nav-item-${index}`} 

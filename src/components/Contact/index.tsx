@@ -1,10 +1,12 @@
 import { useLanguage } from '../../hooks/useLanguage';
+import { LanguageHookInterface } from '../../types/language';
 import ContactCard from './ContactCard';
 import './style.scss';
 import { motion } from 'framer-motion';
+import { ContactPropsInterface } from './index.d';
 
-export default function Contact({onClose}) {
-    const { text } = useLanguage();
+export default function Contact({ onClose } : ContactPropsInterface) {
+    const { text }:LanguageHookInterface = useLanguage();
     return (
         <motion.div 
             id="contact" 
