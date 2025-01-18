@@ -18,8 +18,8 @@ function App() {
       <Navbar />
       <Home />
       <Resume />
-      <Skills />
       <Portfolio />
+      <Skills />
       <br /><br /><br />
     </div>
   )

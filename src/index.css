@@ -11,7 +11,7 @@
     --dark-navbar-primary-color: #ccd6f6;
 
 
-    --dark-main-background-color: #0A192F;
+    --dark-main-background-color: #18181B;
     --dark-main-background-color-lighter: #173c73;
     
     
@@ -37,7 +37,7 @@
     --dark-resume-description-color: #e8f1ff;
 
     
-    --dark-skills-container-background-color: #050d18;
+    --dark-skills-container-background-color: rgb(14, 14, 15);
 
     --dark-skills-h1-color: #ddeaff;
     --dark-skills-filter-border-color: #5c82ff;
@@ -55,7 +55,7 @@
 
     
     --dark-contact-icons-colors: #ddeaff;
-    --dark-contact-background-color-lighter: #061336;
+    --dark-contact-background-color-lighter: #2a2d35;
     --dark-contact-icon-container-background-color-hover: #2a417f;
     --dark-close-btn-bg-color: #DFE2E5;
     --dark-close-btn-color: #061336;
