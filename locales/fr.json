@@ -43,6 +43,20 @@
             "title": "Expérience Pro",
             "work": [
                 {
+                    "year": 2024,
+                    "name": "Ingénieur logiciel",
+                    "institution": "Cegedim Business Services",
+                    "date": "D'octobre 2024 à aujourd'hui",
+                    "address": "Orsay, France",
+                    "website": "https://www.cegedim-business-services.com",
+                    "description": "Je travaille à plein temps avec le groupe CEGEDIM au sein de l'équipe Cosytec. Notre rôle est de créer un produit qui aide les entreprises à gérer et planifier les horaires de leurs employés. Mes principaux rôles sont :",
+                    "bullets": [
+                        "Créer de nouvelles fonctionnalités pour notre produit (Opti-Channel) en utilisant PROLOG.",
+                        "Créer et maintenir la plateforme web accessible par les employés (Opti-web).",
+                        "Diverses autres tâches de gestion (telles que la création de documentation et de workflows pour les développeurs)."
+                    ]
+                },                
+                {
                     "year": 2023,
                     "name": "Apprenti en Recherche et Innovation",
                     "institution": "DARVA",
@@ -681,13 +695,13 @@
             {
                 "name": "WhatsApp",
                 "icon": "whatsapp",
-                "value": "+213 541047274",
+                "value": "+33 780802658",
                 "url": "https://web.whatsapp.com/send/?phone=+213541047274"
             },
             {
                 "name": "Phone",
                 "icon": "phone",
-                "value": "+33 753041390"
+                "value": "+33 780802658"
             }
         ]
     }

@@ -54,14 +54,14 @@ function DesktopNavbar({ text, theme, ids, language, setContactOpened }:NavbarPr
     return (
         <nav id={`navbar-desktop`} className={`navbar-${theme}-mode`}>
             <div className='logo-nav'>
-                {/*<div style={{
+                {<div style={{
                     width: 80,
                     height: 80,
                     backgroundImage: `url(/images/my-pictures/anis_logo.png)`,
                     backgroundSize: 'cover'
                 }}>
 
-            </div>*/}
+            </div>}
             </div>
 
             <div className='nav-container'>

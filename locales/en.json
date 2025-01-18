@@ -43,6 +43,20 @@
             "title": "Work experience",
             "work": [
                 {
+                    "year": 2024,
+                    "name": "Software engineer",
+                    "institution": "Cegedim Business Services",
+                    "date": "From Oct 2024 to Present",
+                    "address": "Orsay, France",
+                    "website": "https://www.cegedim-business-services.com",
+                    "description": "I work full time with the CEGEDIM Group with the Cosytec team. Our role is to create a product that helps companys manager and plan their workers' schedule. My main roles are :",
+                    "bullets": [
+                        "Create new features to our product (Opti-Channel) using PROLOG.",
+                        "Create and maintain the web platform that is accessible by workers (Opti-web).",
+                        "Various other management tasks (such as creating documentation and workflows for devs)."
+                    ]
+                },
+                {
                     "year": 2023,
                     "name": "Apprentice in Research and Innovation",
                     "institution": "DARVA",
